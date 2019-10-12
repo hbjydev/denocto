@@ -1,5 +1,4 @@
 export interface User {
-  // Values
   login: string;
   id: number;
   node_id: string;
