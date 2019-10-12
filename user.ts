@@ -128,7 +128,10 @@ class User implements IUser {
  * @param username The username of the user
  * @param token Your GitHub personal access token for authentication
  */
-export const getUser = async (username: string, token?: string): Promise<User | null> => {
+export const getUser = async (
+  username: string,
+  token?: string
+): Promise<User | null> => {
   const json = await GetJson<IUser>(`users/${username}`, token);
   return new User(json);
-}
+};
