@@ -96,7 +96,7 @@ class User implements IUser {
  * Gets a user from the GitHub API.
  * @param username The username of the user
  */
-export const getUser = async (username: string): Promise<User | null> => {
-  const json = await GetJson<IUser>(`users/${username}`);
+export const getUser = async (username: string, token?: string): Promise<User | null> => {
+  const json = await GetJson<IUser>(`users/${username}`, token);
   return new User(json);
 }
