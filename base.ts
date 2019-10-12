@@ -6,7 +6,7 @@
 export default async function GetJson<T>(
   endpoint: string,
   token?: string
-): Promise<T> {
+): Promise<T | Error> {
   const init = {
     headers: {
       'User-Agent': 'denocto',
@@ -15,5 +15,11 @@ export default async function GetJson<T>(
   }
   token ? init.headers['Authorization'] = `token ${token}` : null;
   const res = await fetch(`https://api.github.com/${endpoint}`, init);
-  return await res.json();
+  const json = await res.json();
+
+  if(json.message) {
+    throw new Error(json.message);
+  }
+
+  return json
 }
