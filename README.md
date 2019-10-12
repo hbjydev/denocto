@@ -30,10 +30,8 @@ getUser("haydennyyy")
 
 #### getUser
 
-|----------|--------|-----------------------------------|
-| Argument | Type   | Description                       |
-|----------|--------|-----------------------------------|
-| username | string | The username to get info for      |
-| token?   | string | The token to get info with        |
-|----------|--------|-----------------------------------|
+| Argument | Type    | Description                         |
+|----------|---------|-------------------------------------|
+| username | string  | The username to get information for |
+| token    | string? | The token to get information with   |
 
