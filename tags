@@ -1,0 +1,672 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/6ad4e95/
+0	tsconfig.json	/^      "deno": [".\/deno.d.ts"],$/;"	s	array:compilerOptions.paths.deno
+0	tsconfig.json	/^      "http:\/\/*": ["..\/..\/.deno\/deps\/http\/*"]$/;"	s	array:compilerOptions.paths.http://*
+0	tsconfig.json	/^      "https:\/\/*": ["..\/..\/.deno\/deps\/https\/*"],$/;"	s	array:compilerOptions.paths.https://*
+0	tsconfig.json	/^    "lib": ["es2018", "dom", "dom.iterable"],$/;"	s	array:compilerOptions.lib
+1	tsconfig.json	/^    "lib": ["es2018", "dom", "dom.iterable"],$/;"	s	array:compilerOptions.lib
+2	tsconfig.json	/^    "lib": ["es2018", "dom", "dom.iterable"],$/;"	s	array:compilerOptions.lib
+AT_TARGET	deno.d.ts	/^    AT_TARGET = 2,$/;"	e	enum:domTypes.EventPhase
+AbortSignal	deno.d.ts	/^  interface AbortSignal extends EventTarget {$/;"	i	namespace:domTypes
+AbortSignalEventMap	deno.d.ts	/^  interface AbortSignalEventMap {$/;"	i	namespace:domTypes
+AddEventListenerOptions	deno.d.ts	/^  export class AddEventListenerOptions extends EventListenerOptions$/;"	c	namespace:eventTarget
+AddEventListenerOptions	deno.d.ts	/^  export interface AddEventListenerOptions extends EventListenerOptions {$/;"	i	namespace:domTypes
+Args	deno.d.ts	/^  export type Args = unknown[];$/;"	a	namespace:io
+BUBBLING_PHASE	deno.d.ts	/^    BUBBLING_PHASE = 3$/;"	e	enum:domTypes.EventPhase
+Blob	deno.d.ts	/^  Blob: typeof blob.DenoBlob;$/;"	p	interface:Window
+Blob	deno.d.ts	/^  export interface Blob {$/;"	i	namespace:domTypes
+Blob	deno.d.ts	/^declare const Blob: typeof blob.DenoBlob;$/;"	C
+Blob	deno.d.ts	/^declare type Blob = domTypes.Blob;$/;"	a
+BlobPart	deno.d.ts	/^  export type BlobPart = BufferSource | Blob | string;$/;"	a	namespace:domTypes
+BlobPropertyBag	deno.d.ts	/^  export interface BlobPropertyBag {$/;"	i	namespace:domTypes
+Body	deno.d.ts	/^  export interface Body {$/;"	i	namespace:domTypes
+Body	deno.d.ts	/^declare type Body = domTypes.Body;$/;"	a
+BodyInit	deno.d.ts	/^  type BodyInit =$/;"	a	namespace:domTypes
+Buffer	deno.d.ts	/^  export class Buffer implements Reader, SyncReader, Writer, SyncWriter {$/;"	c	namespace:Deno
+BufferSource	deno.d.ts	/^  export type BufferSource = ArrayBufferView | ArrayBuffer;$/;"	a	namespace:domTypes
+CAPTURING_PHASE	deno.d.ts	/^    CAPTURING_PHASE = 1,$/;"	e	enum:domTypes.EventPhase
+CSI	deno.d.ts	/^  export class CSI {$/;"	c	namespace:consoleTypes
+Closer	deno.d.ts	/^  export interface Closer {$/;"	i	namespace:Deno
+Closer	deno.d.ts	/^  export interface Closer {$/;"	i	namespace:io
+Conn	deno.d.ts	/^  export interface Conn extends Reader, Writer, Closer {$/;"	i	namespace:Deno
+Console	deno.d.ts	/^  export class Console {$/;"	c	namespace:consoleTypes
+ConsoleOptions	deno.d.ts	/^  type ConsoleOptions = Partial<{$/;"	a	namespace:Deno
+ConsoleOptions	deno.d.ts	/^  type ConsoleOptions = Partial<{$/;"	a	namespace:consoleTypes
+Crypto	deno.d.ts	/^declare interface Crypto {$/;"	i
+CustomEvent	deno.d.ts	/^  CustomEvent: typeof customEvent.CustomEvent;$/;"	p	interface:Window
+CustomEvent	deno.d.ts	/^  export class CustomEvent extends event.Event implements domTypes.CustomEvent {$/;"	c	namespace:customEvent
+CustomEvent	deno.d.ts	/^  export interface CustomEvent extends Event {$/;"	i	namespace:domTypes
+CustomEvent	deno.d.ts	/^declare const CustomEvent: typeof customEvent.CustomEvent;$/;"	C
+CustomEvent	deno.d.ts	/^declare type CustomEvent = domTypes.CustomEvent;$/;"	a
+CustomEventInit	deno.d.ts	/^  export class CustomEventInit extends event.EventInit$/;"	c	namespace:customEvent
+CustomEventInit	deno.d.ts	/^  export interface CustomEventInit extends EventInit {$/;"	i	namespace:domTypes
+CustomEventInit	deno.d.ts	/^declare const CustomEventInit: typeof customEvent.CustomEventInit;$/;"	C
+CustomEventInit	deno.d.ts	/^declare type CustomEventInit = domTypes.CustomEventInit;$/;"	a
+DOCUMENT_FRAGMENT_NODE	deno.d.ts	/^    DOCUMENT_FRAGMENT_NODE = 11$/;"	e	enum:domTypes.NodeType
+Deno	deno.d.ts	/^  Deno: typeof Deno;$/;"	p	interface:Window
+Deno	deno.d.ts	/^declare namespace Deno {$/;"	n
+DenoBlob	deno.d.ts	/^  export class DenoBlob implements domTypes.Blob {$/;"	c	namespace:blob
+Denocto	README.md	/^# Denocto$/;"	c
+DomFile	deno.d.ts	/^  export interface DomFile extends Blob {$/;"	i	namespace:domTypes
+DomFileConstructor	deno.d.ts	/^  export interface DomFileConstructor {$/;"	i	namespace:domTypes
+DomIterable	deno.d.ts	/^  export interface DomIterable<K, V> {$/;"	i	namespace:domTypes
+ELEMENT_NODE	deno.d.ts	/^    ELEMENT_NODE = 1,$/;"	e	enum:domTypes.NodeType
+EOF	deno.d.ts	/^  export const EOF: null;$/;"	C	namespace:io
+EOF	deno.d.ts	/^  export type EOF = null;$/;"	a	namespace:io
+EndingType	deno.d.ts	/^  type EndingType = "transparent" | "native";$/;"	a	namespace:domTypes
+Event	deno.d.ts	/^  Event: typeof event.Event;$/;"	p	interface:Window
+Event	deno.d.ts	/^  export interface Event {$/;"	i	namespace:domTypes
+Event	deno.d.ts	/^declare const Event: typeof event.Event;$/;"	C
+Event	deno.d.ts	/^declare type Event = domTypes.Event;$/;"	a
+EventInit	deno.d.ts	/^  export interface EventInit {$/;"	i	namespace:domTypes
+EventInit	deno.d.ts	/^declare const EventInit: typeof event.EventInit;$/;"	C
+EventInit	deno.d.ts	/^declare type EventInit = domTypes.EventInit;$/;"	a
+EventListener	deno.d.ts	/^  export class EventListener implements domTypes.EventListener {$/;"	c	namespace:eventTarget
+EventListener	deno.d.ts	/^  export interface EventListener {$/;"	i	namespace:domTypes
+EventListener	deno.d.ts	/^declare const EventListener: typeof eventTarget.EventListener;$/;"	C
+EventListener	deno.d.ts	/^declare type EventListener = domTypes.EventListener;$/;"	a
+EventListenerOptions	deno.d.ts	/^  export class EventListenerOptions implements domTypes.EventListenerOptions {$/;"	c	namespace:eventTarget
+EventListenerOptions	deno.d.ts	/^  export interface EventListenerOptions {$/;"	i	namespace:domTypes
+EventPath	deno.d.ts	/^  export interface EventPath {$/;"	i	namespace:domTypes
+EventPhase	deno.d.ts	/^  export enum EventPhase {$/;"	g	namespace:domTypes
+EventTarget	deno.d.ts	/^  EventTarget: typeof eventTarget.EventTarget;$/;"	p	interface:Window
+EventTarget	deno.d.ts	/^  export class EventTarget implements domTypes.EventTarget {$/;"	c	namespace:eventTarget
+EventTarget	deno.d.ts	/^  export interface EventTarget {$/;"	i	namespace:domTypes
+EventTarget	deno.d.ts	/^declare const EventTarget: typeof eventTarget.EventTarget;$/;"	C
+EventTarget	deno.d.ts	/^declare type EventTarget = domTypes.EventTarget;$/;"	a
+File	deno.d.ts	/^  File: domTypes.DomFileConstructor;$/;"	p	interface:Window
+File	deno.d.ts	/^declare const File: domTypes.DomFileConstructor;$/;"	C
+File	deno.d.ts	/^declare type File = domTypes.DomFile;$/;"	a
+FilePropertyBag	deno.d.ts	/^  export interface FilePropertyBag extends BlobPropertyBag {$/;"	i	namespace:domTypes
+Follower	types.d.ts	/^export interface Follower {$/;"	i
+FormData	deno.d.ts	/^  FormData: domTypes.FormDataConstructor;$/;"	p	interface:Window
+FormData	deno.d.ts	/^  export interface FormData extends DomIterable<string, FormDataEntryValue> {$/;"	i	namespace:domTypes
+FormData	deno.d.ts	/^declare const FormData: domTypes.FormDataConstructor;$/;"	C
+FormData	deno.d.ts	/^declare type FormData = domTypes.FormData;$/;"	a
+FormDataConstructor	deno.d.ts	/^  export interface FormDataConstructor {$/;"	i	namespace:domTypes
+FormDataEntryValue	deno.d.ts	/^  export type FormDataEntryValue = DomFile | string;$/;"	a	namespace:domTypes
+GetJson	base.ts	/^export default async function GetJson<T>($/;"	f
+Headers	deno.d.ts	/^  Headers: domTypes.HeadersConstructor;$/;"	p	interface:Window
+Headers	deno.d.ts	/^  export interface Headers extends DomIterable<string, string> {$/;"	i	namespace:domTypes
+Headers	deno.d.ts	/^declare const Headers: domTypes.HeadersConstructor;$/;"	C
+Headers	deno.d.ts	/^declare type Headers = domTypes.Headers;$/;"	a
+HeadersConstructor	deno.d.ts	/^  export interface HeadersConstructor {$/;"	i	namespace:domTypes
+HeadersInit	deno.d.ts	/^  export type HeadersInit =$/;"	a	namespace:domTypes
+ImportMeta	deno.d.ts	/^declare interface ImportMeta {$/;"	i
+ListenOptions	deno.d.ts	/^  export interface ListenOptions {$/;"	i	namespace:Deno
+Listener	deno.d.ts	/^  export interface Listener extends AsyncIterator<Conn> {$/;"	i	namespace:Deno
+Location	deno.d.ts	/^  export interface Location {$/;"	i	namespace:domTypes
+MacOSSignal	deno.d.ts	/^  enum MacOSSignal {$/;"	g	namespace:Deno
+NONE	deno.d.ts	/^    NONE = 0,$/;"	e	enum:domTypes.EventPhase
+NodeType	deno.d.ts	/^  export enum NodeType {$/;"	g	namespace:domTypes
+OpenMode	deno.d.ts	/^  export type OpenMode =$/;"	a	namespace:Deno
+Performance	deno.d.ts	/^  export class Performance {$/;"	c	namespace:io
+Permission	deno.d.ts	/^  export type Permission = keyof Permissions;$/;"	a	namespace:Deno
+Permissions	deno.d.ts	/^  export interface Permissions {$/;"	i	namespace:Deno
+Permissions	deno.d.ts	/^  export type Permission = keyof Permissions;$/;"	a	namespace:Deno
+ProcessStatus	deno.d.ts	/^  export interface ProcessStatus {$/;"	i	namespace:Deno
+ProgressEvent	deno.d.ts	/^  interface ProgressEvent extends Event {$/;"	i	namespace:domTypes
+ProgressEventInit	deno.d.ts	/^  export interface ProgressEventInit extends EventInit {$/;"	i	namespace:domTypes
+ReadCloser	deno.d.ts	/^  export interface ReadCloser extends Reader, Closer {}$/;"	i	namespace:Deno
+ReadCloser	deno.d.ts	/^  export interface ReadCloser extends Reader, Closer {}$/;"	i	namespace:io
+ReadSeeker	deno.d.ts	/^  export interface ReadSeeker extends Reader, Seeker {}$/;"	i	namespace:Deno
+ReadSeeker	deno.d.ts	/^  export interface ReadSeeker extends Reader, Seeker {}$/;"	i	namespace:io
+ReadWriteCloser	deno.d.ts	/^  export interface ReadWriteCloser extends Reader, Writer, Closer {}$/;"	i	namespace:Deno
+ReadWriteCloser	deno.d.ts	/^  export interface ReadWriteCloser extends Reader, Writer, Closer {}$/;"	i	namespace:io
+ReadWriteSeeker	deno.d.ts	/^  export interface ReadWriteSeeker extends Reader, Writer, Seeker {}$/;"	i	namespace:Deno
+ReadWriteSeeker	deno.d.ts	/^  export interface ReadWriteSeeker extends Reader, Writer, Seeker {}$/;"	i	namespace:io
+ReadableStream	deno.d.ts	/^  export interface ReadableStream {$/;"	i	namespace:domTypes
+ReadableStreamReader	deno.d.ts	/^  export interface ReadableStreamReader {$/;"	i	namespace:domTypes
+Reader	deno.d.ts	/^  export interface Reader {$/;"	i	namespace:Deno
+Reader	deno.d.ts	/^  export interface Reader {$/;"	i	namespace:io
+ReferrerPolicy	deno.d.ts	/^  type ReferrerPolicy =$/;"	a	namespace:domTypes
+Request	deno.d.ts	/^  Request: domTypes.RequestConstructor;$/;"	p	interface:Window
+Request	deno.d.ts	/^  export interface Request extends Body {$/;"	i	namespace:domTypes
+Request	deno.d.ts	/^declare const Request: domTypes.RequestConstructor;$/;"	C
+Request	deno.d.ts	/^declare type Request = domTypes.Request;$/;"	a
+RequestCache	deno.d.ts	/^  type RequestCache =$/;"	a	namespace:domTypes
+RequestConstructor	deno.d.ts	/^  export interface RequestConstructor {$/;"	i	namespace:domTypes
+RequestCredentials	deno.d.ts	/^  type RequestCredentials = "omit" | "same-origin" | "include";$/;"	a	namespace:domTypes
+RequestDestination	deno.d.ts	/^  type RequestDestination =$/;"	a	namespace:domTypes
+RequestInfo	deno.d.ts	/^  export type RequestInfo = Request | string;$/;"	a	namespace:domTypes
+RequestInit	deno.d.ts	/^  export interface RequestInit {$/;"	i	namespace:domTypes
+RequestMode	deno.d.ts	/^  type RequestMode = "navigate" | "same-origin" | "no-cors" | "cors";$/;"	a	namespace:domTypes
+RequestRedirect	deno.d.ts	/^  type RequestRedirect = "follow" | "error" | "manual";$/;"	a	namespace:domTypes
+Response	deno.d.ts	/^  Response: typeof fetchTypes.Response;$/;"	p	interface:Window
+Response	deno.d.ts	/^  export interface Response extends Body {$/;"	i	namespace:domTypes
+Response	deno.d.ts	/^declare const Response: typeof fetchTypes.Response;$/;"	C
+Response	deno.d.ts	/^declare type Response = domTypes.Response;$/;"	a
+ResponseInit	deno.d.ts	/^  export interface ResponseInit {$/;"	i	namespace:domTypes
+ResponseType	deno.d.ts	/^  type ResponseType =$/;"	a	namespace:domTypes
+SEEK_CURRENT	deno.d.ts	/^    SEEK_CURRENT = 1,$/;"	e	enum:io.SeekMode
+SEEK_END	deno.d.ts	/^    SEEK_END = 2$/;"	e	enum:io.SeekMode
+SEEK_START	deno.d.ts	/^    SEEK_START = 0,$/;"	e	enum:io.SeekMode
+SIGABRT	deno.d.ts	/^    SIGABRT = 6,$/;"	e	enum:Deno.MacOSSignal
+SIGALRM	deno.d.ts	/^    SIGALRM = 14,$/;"	e	enum:Deno.MacOSSignal
+SIGBUS	deno.d.ts	/^    SIGBUS = 10,$/;"	e	enum:Deno.MacOSSignal
+SIGCHLD	deno.d.ts	/^    SIGCHLD = 20,$/;"	e	enum:Deno.MacOSSignal
+SIGCONT	deno.d.ts	/^    SIGCONT = 19,$/;"	e	enum:Deno.MacOSSignal
+SIGEMT	deno.d.ts	/^    SIGEMT = 7,$/;"	e	enum:Deno.MacOSSignal
+SIGFPE	deno.d.ts	/^    SIGFPE = 8,$/;"	e	enum:Deno.MacOSSignal
+SIGHUP	deno.d.ts	/^    SIGHUP = 1,$/;"	e	enum:Deno.MacOSSignal
+SIGILL	deno.d.ts	/^    SIGILL = 4,$/;"	e	enum:Deno.MacOSSignal
+SIGINFO	deno.d.ts	/^    SIGINFO = 29,$/;"	e	enum:Deno.MacOSSignal
+SIGINT	deno.d.ts	/^    SIGINT = 2,$/;"	e	enum:Deno.MacOSSignal
+SIGIO	deno.d.ts	/^    SIGIO = 23,$/;"	e	enum:Deno.MacOSSignal
+SIGKILL	deno.d.ts	/^    SIGKILL = 9,$/;"	e	enum:Deno.MacOSSignal
+SIGPIPE	deno.d.ts	/^    SIGPIPE = 13,$/;"	e	enum:Deno.MacOSSignal
+SIGPROF	deno.d.ts	/^    SIGPROF = 27,$/;"	e	enum:Deno.MacOSSignal
+SIGQUIT	deno.d.ts	/^    SIGQUIT = 3,$/;"	e	enum:Deno.MacOSSignal
+SIGSEGV	deno.d.ts	/^    SIGSEGV = 11,$/;"	e	enum:Deno.MacOSSignal
+SIGSTOP	deno.d.ts	/^    SIGSTOP = 17,$/;"	e	enum:Deno.MacOSSignal
+SIGSYS	deno.d.ts	/^    SIGSYS = 12,$/;"	e	enum:Deno.MacOSSignal
+SIGTERM	deno.d.ts	/^    SIGTERM = 15,$/;"	e	enum:Deno.MacOSSignal
+SIGTRAP	deno.d.ts	/^    SIGTRAP = 5,$/;"	e	enum:Deno.MacOSSignal
+SIGTSTP	deno.d.ts	/^    SIGTSTP = 18,$/;"	e	enum:Deno.MacOSSignal
+SIGTTIN	deno.d.ts	/^    SIGTTIN = 21,$/;"	e	enum:Deno.MacOSSignal
+SIGTTOU	deno.d.ts	/^    SIGTTOU = 22,$/;"	e	enum:Deno.MacOSSignal
+SIGURG	deno.d.ts	/^    SIGURG = 16,$/;"	e	enum:Deno.MacOSSignal
+SIGUSR1	deno.d.ts	/^    SIGUSR1 = 30,$/;"	e	enum:Deno.MacOSSignal
+SIGUSR2	deno.d.ts	/^    SIGUSR2 = 31$/;"	e	enum:Deno.MacOSSignal
+SIGVTALRM	deno.d.ts	/^    SIGVTALRM = 26,$/;"	e	enum:Deno.MacOSSignal
+SIGWINCH	deno.d.ts	/^    SIGWINCH = 28,$/;"	e	enum:Deno.MacOSSignal
+SIGXCPU	deno.d.ts	/^    SIGXCPU = 24,$/;"	e	enum:Deno.MacOSSignal
+SIGXFSZ	deno.d.ts	/^    SIGXFSZ = 25,$/;"	e	enum:Deno.MacOSSignal
+SeekMode	deno.d.ts	/^  export enum SeekMode {$/;"	g	namespace:io
+Seeker	deno.d.ts	/^  export interface Seeker {$/;"	i	namespace:Deno
+Seeker	deno.d.ts	/^  export interface Seeker {$/;"	i	namespace:io
+Signal	deno.d.ts	/^  export const Signal: typeof MacOSSignal | typeof LinuxSignal;$/;"	C	namespace:Deno
+SyncReader	deno.d.ts	/^  export interface SyncReader {$/;"	i	namespace:Deno
+SyncReader	deno.d.ts	/^  export interface SyncReader {$/;"	i	namespace:io
+SyncSeeker	deno.d.ts	/^  export interface SyncSeeker {$/;"	i	namespace:Deno
+SyncSeeker	deno.d.ts	/^  export interface SyncSeeker {$/;"	i	namespace:io
+SyncWriter	deno.d.ts	/^  export interface SyncWriter {$/;"	i	namespace:Deno
+SyncWriter	deno.d.ts	/^  export interface SyncWriter {$/;"	i	namespace:io
+TEXT_NODE	deno.d.ts	/^    TEXT_NODE = 3,$/;"	e	enum:domTypes.NodeType
+TextDecoder	deno.d.ts	/^  TextDecoder: typeof textEncoding.TextDecoder;$/;"	p	interface:Window
+TextDecoder	deno.d.ts	/^  export class TextDecoder {$/;"	c	namespace:io
+TextDecoder	deno.d.ts	/^declare const TextDecoder: typeof textEncoding.TextDecoder;$/;"	C
+TextDecoder	deno.d.ts	/^declare type TextDecoder = textEncoding.TextDecoder;$/;"	a
+TextDecoderOptions	deno.d.ts	/^  export interface TextDecoderOptions {$/;"	i	namespace:io
+TextEncoder	deno.d.ts	/^  TextEncoder: typeof textEncoding.TextEncoder;$/;"	p	interface:Window
+TextEncoder	deno.d.ts	/^declare const TextEncoder: typeof textEncoding.TextEncoder;$/;"	C
+TextEncoder	deno.d.ts	/^declare type TextEncoder = textEncoding.TextEncoder;$/;"	a
+URL	deno.d.ts	/^  URL: typeof url.URL;$/;"	p	interface:Window
+URL	deno.d.ts	/^  export class URL {$/;"	c	namespace:io
+URL	deno.d.ts	/^declare const URL: typeof url.URL;$/;"	C
+URL	deno.d.ts	/^declare type URL = url.URL;$/;"	a
+URLSearchParams	deno.d.ts	/^  URLSearchParams: typeof urlSearchParams.URLSearchParams;$/;"	p	interface:Window
+URLSearchParams	deno.d.ts	/^  export interface URLSearchParams extends DomIterable<string, string> {$/;"	i	namespace:domTypes
+URLSearchParams	deno.d.ts	/^declare const URLSearchParams: typeof urlSearchParams.URLSearchParams;$/;"	C
+URLSearchParams	deno.d.ts	/^declare type URLSearchParams = domTypes.URLSearchParams;$/;"	a
+URLSearchParamsInit	deno.d.ts	/^  export type URLSearchParamsInit =$/;"	a	namespace:domTypes
+User	types.d.ts	/^export interface User {$/;"	i
+User	user.ts	/^class User implements IUser {$/;"	c
+Version	deno.d.ts	/^  interface Version {$/;"	i	namespace:Deno
+Window	deno.d.ts	/^declare interface Window {$/;"	i
+Worker	deno.d.ts	/^  Worker: typeof workers.WorkerImpl;$/;"	p	interface:Window
+Worker	deno.d.ts	/^declare const Worker: typeof workers.WorkerImpl;$/;"	C
+Worker	deno.d.ts	/^declare type Worker = workers.Worker;$/;"	a
+WriteCloser	deno.d.ts	/^  export interface WriteCloser extends Writer, Closer {}$/;"	i	namespace:Deno
+WriteCloser	deno.d.ts	/^  export interface WriteCloser extends Writer, Closer {}$/;"	i	namespace:io
+WriteSeeker	deno.d.ts	/^  export interface WriteSeeker extends Writer, Seeker {}$/;"	i	namespace:Deno
+WriteSeeker	deno.d.ts	/^  export interface WriteSeeker extends Writer, Seeker {}$/;"	i	namespace:io
+Writer	deno.d.ts	/^  export interface Writer {$/;"	i	namespace:Deno
+Writer	deno.d.ts	/^  export interface Writer {$/;"	i	namespace:io
+_encoding	deno.d.ts	/^    private _encoding;$/;"	p	class:io.TextDecoder
+_parts	deno.d.ts	/^    private _parts;$/;"	p	class:io.URL
+_searchParams	deno.d.ts	/^    private _searchParams;$/;"	p	class:io.URL
+_updateSearchParams	deno.d.ts	/^    private _updateSearchParams;$/;"	p	class:io.URL
+abort	deno.d.ts	/^    abort: ProgressEvent;$/;"	p	interface:domTypes.AbortSignalEventMap
+aborted	deno.d.ts	/^    readonly aborted: boolean;$/;"	p	interface:domTypes.AbortSignal
+accept	deno.d.ts	/^    accept(): Promise<Conn>;$/;"	m	interface:Deno.Listener
+addEventListener	deno.d.ts	/^    addEventListener($/;"	m	interface:domTypes.AbortSignal
+addEventListener	deno.d.ts	/^    addEventListener($/;"	m	interface:domTypes.EventTarget
+addEventListener	deno.d.ts	/^    addEventListener<K extends keyof AbortSignalEventMap>($/;"	m	interface:domTypes.AbortSignal
+addEventListener	deno.d.ts	/^  addEventListener: ($/;"	p	interface:Window
+addEventListener	deno.d.ts	/^declare const addEventListener: ($/;"	C
+addr	deno.d.ts	/^    addr(): Addr;$/;"	m	interface:Deno.Listener
+ancestorOrigins	deno.d.ts	/^    readonly ancestorOrigins: string[];$/;"	p	interface:domTypes.Location
+append	deno.d.ts	/^    append(name: string, value: string | Blob, fileName?: string): void;$/;"	m	interface:domTypes.FormData
+append	deno.d.ts	/^    append(name: string, value: string): void;$/;"	m	interface:domTypes.Headers
+append	deno.d.ts	/^    append(name: string, value: string): void;$/;"	m	interface:domTypes.URLSearchParams
+applySourceMap	deno.d.ts	/^  export function applySourceMap(location: Location): Location;$/;"	m	class:Deno.Buffer
+args	deno.d.ts	/^  export const args: string[];$/;"	C	namespace:Deno
+arrayBuffer	deno.d.ts	/^    arrayBuffer(): Promise<ArrayBuffer>;$/;"	m	interface:domTypes.Body
+assign	deno.d.ts	/^    assign(url: string): void;$/;"	m	interface:domTypes.Location
+atob	deno.d.ts	/^  atob: typeof textEncoding.atob;$/;"	p	interface:Window
+atob	deno.d.ts	/^  export function atob(s: string): string;$/;"	f	namespace:io
+atob	deno.d.ts	/^declare const atob: typeof textEncoding.atob;$/;"	C
+avatar_url	types.d.ts	/^  avatar_url: string;$/;"	p	interface:Follower
+avatar_url	types.d.ts	/^  avatar_url: string;$/;"	p	interface:User
+avatar_url	user.ts	/^  public avatar_url: string;$/;"	p	class:User
+baseUrl	tsconfig.json	/^    "baseUrl": ".",$/;"	s	object:compilerOptions
+bio	types.d.ts	/^  bio: string;$/;"	p	interface:User
+bio	user.ts	/^  public bio: string;$/;"	p	class:User
+blob	deno.d.ts	/^    blob(): Promise<Blob>;$/;"	m	interface:domTypes.Body
+blob	deno.d.ts	/^declare namespace blob {$/;"	n
+blobBytesWeakMap	deno.d.ts	/^  export const blobBytesWeakMap: WeakMap<domTypes.Blob, Uint8Array>;$/;"	C	namespace:blob
+blobURLMap	deno.d.ts	/^  export const blobURLMap: Map<string, domTypes.Blob>;$/;"	C	namespace:io
+blog	types.d.ts	/^  blog: string;$/;"	p	interface:User
+blog	user.ts	/^  public blog: string;$/;"	p	class:User
+body	deno.d.ts	/^    body?: BodyInit | null;$/;"	p	interface:domTypes.RequestInit
+body	deno.d.ts	/^    readonly body: ReadableStream | null;$/;"	p	interface:domTypes.Body
+bodyUsed	deno.d.ts	/^    readonly bodyUsed: boolean;$/;"	p	interface:domTypes.Body
+btoa	deno.d.ts	/^  btoa: typeof textEncoding.btoa;$/;"	p	interface:Window
+btoa	deno.d.ts	/^declare const btoa: typeof textEncoding.btoa;$/;"	C
+bubbles	deno.d.ts	/^    bubbles?: boolean;$/;"	p	interface:domTypes.EventInit
+bubbles	deno.d.ts	/^    readonly bubbles: boolean;$/;"	p	interface:domTypes.Event
+buf	deno.d.ts	/^    private buf;$/;"	p	class:Deno.Buffer
+build	deno.d.ts	/^  export const build: BuildInfo;$/;"	C	namespace:Deno
+bytesSymbol	deno.d.ts	/^  export const bytesSymbol: unique symbol;$/;"	C	namespace:blob
+cache	deno.d.ts	/^    cache?: RequestCache;$/;"	p	interface:domTypes.RequestInit
+cache	deno.d.ts	/^    readonly cache?: RequestCache;$/;"	p	interface:domTypes.Request
+callback	deno.d.ts	/^    readonly callback: (event: Event) => void | null;$/;"	p	interface:domTypes.EventListener
+cancel	deno.d.ts	/^    cancel(): Promise<void>;$/;"	m	interface:domTypes.ReadableStream
+cancel	deno.d.ts	/^    cancel(): Promise<void>;$/;"	m	interface:domTypes.ReadableStreamReader
+cancelBubble	deno.d.ts	/^    cancelBubble: boolean;$/;"	p	interface:domTypes.Event
+cancelBubbleImmediately	deno.d.ts	/^    cancelBubbleImmediately: boolean;$/;"	p	interface:domTypes.Event
+cancelable	deno.d.ts	/^    cancelable?: boolean;$/;"	p	interface:domTypes.EventInit
+cancelable	deno.d.ts	/^    readonly cancelable: boolean;$/;"	p	interface:domTypes.Event
+capture	deno.d.ts	/^    capture: boolean;$/;"	p	interface:domTypes.EventListenerOptions
+clearInterval	deno.d.ts	/^  clearInterval: typeof timers.clearInterval;$/;"	p	interface:Window
+clearInterval	deno.d.ts	/^declare const clearInterval: typeof timers.clearInterval;$/;"	C
+clearTimeout	deno.d.ts	/^  clearTimeout: typeof timers.clearTimeout;$/;"	p	interface:Window
+clearTimeout	deno.d.ts	/^declare const clearTimeout: typeof timers.clearTimeout;$/;"	C
+clone	deno.d.ts	/^    clone(): Request;$/;"	m	interface:domTypes.Request
+clone	deno.d.ts	/^    clone(): Response;$/;"	m	interface:domTypes.Response
+close	deno.d.ts	/^    close(): void;$/;"	m	interface:Deno.Closer
+close	deno.d.ts	/^    close(): void;$/;"	m	interface:Deno.Listener
+close	deno.d.ts	/^    close(): void;$/;"	m	interface:io.Closer
+closeRead	deno.d.ts	/^    closeRead(): void;$/;"	m	interface:Deno.Conn
+closeWrite	deno.d.ts	/^    closeWrite(): void;$/;"	m	interface:Deno.Conn
+code	deno.d.ts	/^    code?: number;$/;"	p	interface:Deno.ProcessStatus
+company	types.d.ts	/^  company: string;$/;"	p	interface:User
+company	user.ts	/^  public company: string;$/;"	p	class:User
+compilerOptions	tsconfig.json	/^  "compilerOptions": {$/;"	o
+composed	deno.d.ts	/^    composed?: boolean;$/;"	p	interface:domTypes.EventInit
+composed	deno.d.ts	/^    readonly composed: boolean;$/;"	p	interface:domTypes.Event
+composedPath	deno.d.ts	/^    composedPath(): EventPath[];$/;"	m	interface:domTypes.Event
+console	deno.d.ts	/^  console: consoleTypes.Console;$/;"	p	interface:Window
+console	deno.d.ts	/^declare const console: consoleTypes.Console;$/;"	C
+consoleTypes	deno.d.ts	/^declare namespace consoleTypes {$/;"	n
+constructor	deno.d.ts	/^    constructor(ab?: ArrayBuffer);$/;"	m	class:Deno.Buffer
+constructor	deno.d.ts	/^    constructor(label?: string, options?: TextDecoderOptions);$/;"	m	class:io.TextDecoder
+constructor	deno.d.ts	/^    constructor(url: string, base?: string | URL);$/;"	m	class:io.URL
+constructor	user.ts	/^  constructor(json: any) {$/;"	m	class:User
+copy	deno.d.ts	/^  export function copy(dst: Writer, src: Reader): Promise<number>;$/;"	f	namespace:Deno
+copy	deno.d.ts	/^  export function copy(dst: Writer, src: Reader): Promise<number>;$/;"	f	namespace:io
+created_at	types.d.ts	/^  created_at: string;$/;"	p	interface:User
+created_at	user.ts	/^  public created_at: string;$/;"	p	class:User
+credentials	deno.d.ts	/^    credentials?: RequestCredentials;$/;"	p	interface:domTypes.RequestInit
+credentials	deno.d.ts	/^    readonly credentials?: RequestCredentials;$/;"	p	interface:domTypes.Request
+crypto	deno.d.ts	/^  crypto: Crypto;$/;"	p	interface:Window
+crypto	deno.d.ts	/^declare const crypto: Crypto;$/;"	C
+currentTarget	deno.d.ts	/^    currentTarget: EventTarget | null;$/;"	p	interface:domTypes.Event
+customEvent	deno.d.ts	/^declare namespace customEvent {$/;"	n
+customEventAttributes	deno.d.ts	/^  export const customEventAttributes: WeakMap<object, any>;$/;"	C	namespace:customEvent
+customInspect	deno.d.ts	/^  export const customInspect: unique symbol;$/;"	C
+customInspect	deno.d.ts	/^  export const customInspect: unique symbol;$/;"	C	namespace:Deno
+defaultPrevented	deno.d.ts	/^    readonly defaultPrevented: boolean;$/;"	p	interface:domTypes.Event
+delete	deno.d.ts	/^    delete(name: string): void;$/;"	m	interface:domTypes.FormData
+delete	deno.d.ts	/^    delete(name: string): void;$/;"	m	interface:domTypes.Headers
+delete	deno.d.ts	/^    delete(name: string): void;$/;"	m	interface:domTypes.URLSearchParams
+deno	deno.d.ts	/^    deno: string;$/;"	p	interface:Deno.Version
+deno	tsconfig.json	/^      "deno": [".\/deno.d.ts"],$/;"	a	object:compilerOptions.paths
+destination	deno.d.ts	/^    readonly destination?: RequestDestination;$/;"	p	interface:domTypes.Request
+detail	deno.d.ts	/^    detail?: any;$/;"	p	interface:domTypes.CustomEventInit
+detail	deno.d.ts	/^    readonly detail: any;$/;"	p	interface:domTypes.CustomEvent
+dial	deno.d.ts	/^  export function dial(options: DialOptions): Promise<Conn>;$/;"	f	namespace:Deno
+dialTLS	deno.d.ts	/^  export function dialTLS(options: DialTLSOptions): Promise<Conn>;$/;"	f	namespace:Deno
+dispatchEvent	deno.d.ts	/^    dispatchEvent(event: Event): boolean;$/;"	m	interface:domTypes.EventTarget
+dispatchEvent	deno.d.ts	/^  dispatchEvent: (event: domTypes.Event) => boolean;$/;"	p	interface:Window
+dispatchEvent	deno.d.ts	/^declare const dispatchEvent: (event: domTypes.Event) => boolean;$/;"	C
+dispatched	deno.d.ts	/^    dispatched: boolean;$/;"	p	interface:domTypes.Event
+domTypes	deno.d.ts	/^declare namespace domTypes {$/;"	n
+email	types.d.ts	/^  email: string;$/;"	p	interface:User
+email	user.ts	/^  public email: string;$/;"	p	class:User
+encoding	deno.d.ts	/^    readonly encoding: string;$/;"	p	class:io.TextDecoder
+ending	deno.d.ts	/^    ending?: EndingType;$/;"	p	interface:domTypes.BlobPropertyBag
+entries	deno.d.ts	/^    entries(): IterableIterator<[K, V]>;$/;"	m	interface:domTypes.DomIterable
+entries	deno.d.ts	/^    entries(): IterableIterator<[string, string]>;$/;"	m	interface:domTypes.Headers
+env	deno.d.ts	/^    env: boolean;$/;"	p	interface:Deno.Permissions
+env	deno.d.ts	/^  export function env(key: string): string | undefined;$/;"	f	namespace:Deno
+env	user_test.ts	/^const { env } = Deno;$/;"	C
+eventAttributes	deno.d.ts	/^  export const eventAttributes: WeakMap<object, any>;$/;"	C	function:inspect
+eventPhase	deno.d.ts	/^    eventPhase: number;$/;"	p	interface:domTypes.Event
+eventTarget	deno.d.ts	/^declare namespace eventTarget {$/;"	n
+eventTargetAssignedSlot	deno.d.ts	/^  export const eventTargetAssignedSlot: unique symbol;$/;"	C	namespace:eventTarget
+eventTargetHasActivationBehavior	deno.d.ts	/^  export const eventTargetHasActivationBehavior: unique symbol;$/;"	C	namespace:eventTarget
+eventTargetHost	deno.d.ts	/^  export const eventTargetHost: unique symbol;$/;"	C	namespace:domTypes
+eventTargetListeners	deno.d.ts	/^  export const eventTargetListeners: unique symbol;$/;"	C	namespace:domTypes
+eventTargetMode	deno.d.ts	/^  export const eventTargetMode: unique symbol;$/;"	C	namespace:domTypes
+eventTargetNodeType	deno.d.ts	/^  export const eventTargetNodeType: unique symbol;$/;"	C	namespace:domTypes
+events_url	types.d.ts	/^  events_url: string;$/;"	p	interface:Follower
+events_url	types.d.ts	/^  events_url: string;$/;"	p	interface:User
+events_url	user.ts	/^  public events_url: string;$/;"	p	class:User
+fatal	deno.d.ts	/^    fatal?: boolean;$/;"	p	interface:io.TextDecoderOptions
+fatal	deno.d.ts	/^    readonly fatal: boolean;$/;"	p	class:io.TextDecoder
+fetch	deno.d.ts	/^  fetch: typeof fetchTypes.fetch;$/;"	p	interface:Window
+fetch	deno.d.ts	/^declare const fetch: typeof fetchTypes.fetch;$/;"	C
+followers	types.d.ts	/^  followers: number;$/;"	p	interface:User
+followers	user.ts	/^  public followers: number;$/;"	p	class:User
+followers	user_test.ts	/^    const followers = await user.getFollowers();$/;"	C	function:userTest
+followers_url	types.d.ts	/^  followers_url: string;$/;"	p	interface:Follower
+followers_url	types.d.ts	/^  followers_url: string;$/;"	p	interface:User
+followers_url	user.ts	/^  public followers_url: string;$/;"	p	class:User
+following	types.d.ts	/^  following: number;$/;"	p	interface:User
+following	user.ts	/^  public following: number;$/;"	p	class:User
+following_url	types.d.ts	/^  following_url: string;$/;"	p	interface:Follower
+forEach	deno.d.ts	/^    forEach($/;"	m	interface:domTypes.DomIterable
+forEach	deno.d.ts	/^    forEach($/;"	m	interface:domTypes.Headers
+forEach	deno.d.ts	/^    forEach($/;"	m	interface:domTypes.URLSearchParams
+formData	deno.d.ts	/^    formData(): Promise<FormData>;$/;"	m	interface:domTypes.Body
+gerReceivedEvents	user.ts	/^  public async gerReceivedEvents(): Promise<IUser[]> {$/;"	m	class:User
+get	deno.d.ts	/^    get(name: string): FormDataEntryValue | null;$/;"	m	interface:domTypes.FormData
+get	deno.d.ts	/^    get(name: string): string | null;$/;"	m	interface:domTypes.Headers
+get	deno.d.ts	/^    get(name: string): string | null;$/;"	m	interface:domTypes.URLSearchParams
+getAll	deno.d.ts	/^    getAll(name: string): FormDataEntryValue[];$/;"	m	interface:domTypes.FormData
+getAll	deno.d.ts	/^    getAll(name: string): string[];$/;"	m	interface:domTypes.URLSearchParams
+getEvents	user.ts	/^  public async getEvents(): Promise<IUser[]> {$/;"	m	class:User
+getFollowers	user.ts	/^  public async getFollowers(): Promise<IUser[]> {$/;"	m	class:User
+getGists	user.ts	/^  public async getGists(): Promise<IUser[]> {$/;"	m	class:User
+getOrganizations	user.ts	/^  public async getOrganizations(): Promise<IUser[]> {$/;"	m	class:User
+getRandomValues	deno.d.ts	/^  getRandomValues: <$/;"	m	interface:Crypto
+getReader	deno.d.ts	/^    getReader(): ReadableStreamReader;$/;"	m	interface:domTypes.ReadableStream
+getRepos	user.ts	/^  public async getRepos(): Promise<IUser[]> {$/;"	m	class:User
+getStarred	user.ts	/^  public async getStarred(): Promise<IUser[]> {$/;"	m	class:User
+getSubscriptions	user.ts	/^  public async getSubscriptions(): Promise<IUser[]> {$/;"	m	class:User
+getUser	user.ts	/^export const getUser = async (username: string, token?: string): Promise<User | null> => {$/;"	C
+gists_url	types.d.ts	/^  gists_url: string;$/;"	p	interface:Follower
+gists_url	types.d.ts	/^  gists_url: string;$/;"	p	interface:User
+gists_url	user.ts	/^  public gists_url: string;$/;"	p	class:User
+gravatar_id	types.d.ts	/^  gravatar_id: string;$/;"	p	interface:Follower
+gravatar_id	types.d.ts	/^  gravatar_id: string;$/;"	p	interface:User
+gravatar_id	user.ts	/^  public gravatar_id: string;$/;"	p	class:User
+handleEvent	deno.d.ts	/^    handleEvent(event: Event): void;$/;"	m	interface:domTypes.EventListener
+has	deno.d.ts	/^    has(name: string): boolean;$/;"	m	interface:domTypes.FormData
+has	deno.d.ts	/^    has(name: string): boolean;$/;"	m	interface:domTypes.Headers
+has	deno.d.ts	/^    has(name: string): boolean;$/;"	m	interface:domTypes.URLSearchParams
+hash	deno.d.ts	/^    hash: string;$/;"	p	class:io.URL
+hash	deno.d.ts	/^    hash: string;$/;"	p	interface:domTypes.Location
+headers	deno.d.ts	/^    headers?: HeadersInit;$/;"	p	interface:domTypes.RequestInit
+headers	deno.d.ts	/^    headers?: HeadersInit;$/;"	p	interface:domTypes.ResponseInit
+headers	deno.d.ts	/^    readonly headers: Headers;$/;"	p	interface:domTypes.Request
+headers	deno.d.ts	/^    readonly headers: Headers;$/;"	p	interface:domTypes.Response
+hireable	types.d.ts	/^  hireable: boolean;$/;"	p	interface:User
+hireable	user.ts	/^  public hireable: boolean;$/;"	p	class:User
+host	deno.d.ts	/^    host: string;$/;"	p	class:io.URL
+host	deno.d.ts	/^    host: string;$/;"	p	interface:domTypes.Location
+hostname	deno.d.ts	/^    hostname: string;$/;"	p	class:io.URL
+hostname	deno.d.ts	/^    hostname: string;$/;"	p	interface:domTypes.Location
+hostname	deno.d.ts	/^    hostname?: string;$/;"	p	interface:Deno.ListenOptions
+hostname	deno.d.ts	/^  export function hostname(): string;$/;"	f	namespace:Deno
+href	deno.d.ts	/^    href: string;$/;"	p	class:io.URL
+href	deno.d.ts	/^    href: string;$/;"	p	interface:domTypes.Location
+hrtime	deno.d.ts	/^    hrtime: boolean;$/;"	p	interface:Deno.Permissions
+html_url	types.d.ts	/^  html_url: string;$/;"	p	interface:Follower
+html_url	types.d.ts	/^  html_url: string;$/;"	p	interface:User
+html_url	user.ts	/^  public html_url: string;$/;"	p	class:User
+http://*	tsconfig.json	/^      "http:\/\/*": ["..\/..\/.deno\/deps\/http\/*"]$/;"	a	object:compilerOptions.paths
+https://*	tsconfig.json	/^      "https:\/\/*": ["..\/..\/.deno\/deps\/https\/*"],$/;"	a	object:compilerOptions.paths
+id	types.d.ts	/^  id: number;$/;"	p	interface:Follower
+id	types.d.ts	/^  id: number;$/;"	p	interface:User
+id	user.ts	/^  public id: number;$/;"	p	class:User
+ignoreBOM	deno.d.ts	/^    ignoreBOM?: boolean;$/;"	p	interface:io.TextDecoderOptions
+ignoreBOM	deno.d.ts	/^    readonly ignoreBOM = false;$/;"	p	class:io.TextDecoder
+in	deno.d.ts	/^      [type in string]: domTypes.EventListener[]$/;"	a	namespace:eventTarget
+inPassiveListener	deno.d.ts	/^    inPassiveListener: boolean;$/;"	p	interface:domTypes.Event
+indentLevel	deno.d.ts	/^    indentLevel: number;$/;"	p	class:consoleTypes.Console
+init	base.ts	/^  const init = {$/;"	C	function:GetJson
+initCustomEvent	deno.d.ts	/^    initCustomEvent($/;"	m	interface:domTypes.CustomEvent
+initialized	deno.d.ts	/^    readonly initialized: boolean;$/;"	p	interface:domTypes.Event
+inspect	deno.d.ts	/^  export function inspect(value: unknown, options?: ConsoleOptions): string;$/;"	f
+inspect	deno.d.ts	/^  export function inspect(value: unknown, options?: ConsoleOptions): string;$/;"	f	namespace:Deno
+integrity	deno.d.ts	/^    integrity?: string;$/;"	p	interface:domTypes.RequestInit
+integrity	deno.d.ts	/^    readonly integrity?: string;$/;"	p	interface:domTypes.Request
+io	deno.d.ts	/^declare namespace io {$/;"	n
+isConsoleInstance	deno.d.ts	/^  const isConsoleInstance: unique symbol;$/;"	C	namespace:consoleTypes
+isHistoryNavigation	deno.d.ts	/^    readonly isHistoryNavigation?: boolean;$/;"	p	interface:domTypes.Request
+isReloadNavigation	deno.d.ts	/^    readonly isReloadNavigation?: boolean;$/;"	p	interface:domTypes.Request
+isTTY	deno.d.ts	/^  export function isTTY(): {$/;"	f	namespace:Deno
+isTrusted	deno.d.ts	/^    isTrusted: boolean;$/;"	p	interface:domTypes.Event
+item	deno.d.ts	/^    item: EventTarget;$/;"	p	interface:domTypes.EventPath
+itemInShadowTree	deno.d.ts	/^    itemInShadowTree: boolean;$/;"	p	interface:domTypes.EventPath
+json	base.ts	/^  const json = await res.json();$/;"	C	function:GetJson
+json	deno.d.ts	/^    json(): Promise<any>;$/;"	m	interface:domTypes.Body
+json	user.ts	/^  const json = await GetJson<IUser>(`users\/${username}`, token);$/;"	C
+kClear	deno.d.ts	/^    static kClear: string;$/;"	p	class:consoleTypes.CSI
+kClearScreenDown	deno.d.ts	/^    static kClearScreenDown: string;$/;"	p	class:consoleTypes.CSI
+keepalive	deno.d.ts	/^    keepalive?: boolean;$/;"	p	interface:domTypes.RequestInit
+keepalive	deno.d.ts	/^    readonly keepalive?: boolean;$/;"	p	interface:domTypes.Request
+keys	deno.d.ts	/^    keys(): IterableIterator<K>;$/;"	m	interface:domTypes.DomIterable
+keys	deno.d.ts	/^    keys(): IterableIterator<string>;$/;"	m	interface:domTypes.Headers
+kill	deno.d.ts	/^  export function kill(pid: number, signo: number): void;$/;"	f	namespace:Deno
+lastModified	deno.d.ts	/^    lastModified?: number;$/;"	p	interface:domTypes.FilePropertyBag
+lastModified	deno.d.ts	/^    readonly lastModified: number;$/;"	p	interface:domTypes.DomFile
+lengthComputable	deno.d.ts	/^    lengthComputable?: boolean;$/;"	p	interface:domTypes.ProgressEventInit
+lengthComputable	deno.d.ts	/^    readonly lengthComputable: boolean;$/;"	p	interface:domTypes.ProgressEvent
+lib	tsconfig.json	/^    "lib": ["es2018", "dom", "dom.iterable"],$/;"	a	object:compilerOptions
+listen	deno.d.ts	/^  export function listen(options: ListenOptions): Listener;$/;"	f	namespace:Deno
+loaded	deno.d.ts	/^    loaded?: number;$/;"	p	interface:domTypes.ProgressEventInit
+loaded	deno.d.ts	/^    readonly loaded: number;$/;"	p	interface:domTypes.ProgressEvent
+localAddr	deno.d.ts	/^    localAddr: string;$/;"	p	interface:Deno.Conn
+location	deno.d.ts	/^  location: domTypes.Location;$/;"	p	interface:Window
+location	deno.d.ts	/^declare const location: domTypes.Location;$/;"	C
+location	types.d.ts	/^  location: string;$/;"	p	interface:User
+location	user.ts	/^  public location: string;$/;"	p	class:User
+locked	deno.d.ts	/^    readonly locked: boolean;$/;"	p	interface:domTypes.ReadableStream
+login	types.d.ts	/^  login: string;$/;"	p	interface:Follower
+login	types.d.ts	/^  login: string;$/;"	p	interface:User
+login	user.ts	/^  public login: string;$/;"	p	class:User
+lstat	deno.d.ts	/^  export function lstat(filename: string): Promise<FileInfo>;$/;"	m	class:Deno.Buffer
+main	deno.d.ts	/^  main: boolean;$/;"	p	interface:ImportMeta
+makeTempDirSync	deno.d.ts	/^  export function makeTempDirSync(options?: MakeTempDirOptions): string;$/;"	m	class:Deno.Buffer
+method	deno.d.ts	/^    method?: string;$/;"	p	interface:domTypes.RequestInit
+method	deno.d.ts	/^    readonly method: string;$/;"	p	interface:domTypes.Request
+metrics	deno.d.ts	/^  export function metrics(): Metrics;$/;"	f	namespace:Deno
+mode	deno.d.ts	/^    mode?: RequestMode;$/;"	p	interface:domTypes.RequestInit
+mode	deno.d.ts	/^    readonly mode?: RequestMode;$/;"	p	interface:domTypes.Request
+name	deno.d.ts	/^    readonly name: string;$/;"	p	interface:domTypes.DomFile
+name	types.d.ts	/^  name: string;$/;"	p	interface:User
+name	user.ts	/^  public name: string;$/;"	p	class:User
+net	deno.d.ts	/^    net: boolean;$/;"	p	interface:Deno.Permissions
+new	deno.d.ts	/^    new ($/;"	m	interface:domTypes.DomFileConstructor
+new	deno.d.ts	/^    new (): FormData;$/;"	m	interface:domTypes.FormDataConstructor
+new	deno.d.ts	/^    new (init?: HeadersInit): Headers;$/;"	m	interface:domTypes.HeadersConstructor
+new	deno.d.ts	/^    new (input: RequestInfo, init?: RequestInit): Request;$/;"	m	interface:domTypes.RequestConstructor
+noColor	deno.d.ts	/^  export let noColor: boolean;$/;"	v	namespace:Deno
+node_id	types.d.ts	/^  node_id: string;$/;"	p	interface:Follower
+node_id	types.d.ts	/^  node_id: string;$/;"	p	interface:User
+node_id	user.ts	/^  public node_id: string;$/;"	p	class:User
+now	deno.d.ts	/^    now(): number;$/;"	m	class:io.Performance
+off	deno.d.ts	/^    private off;$/;"	p	class:Deno.Buffer
+ok	deno.d.ts	/^    readonly ok: boolean;$/;"	p	interface:domTypes.Response
+onabort	deno.d.ts	/^    onabort: ((this: AbortSignal, ev: ProgressEvent) => any) | null;$/;"	p	interface:domTypes.AbortSignal
+once	deno.d.ts	/^    once: boolean;$/;"	p	interface:domTypes.AddEventListenerOptions
+onload	deno.d.ts	/^  onload: Function | undefined;$/;"	p	interface:Window
+onload	deno.d.ts	/^declare const onload: Function | undefined;$/;"	C
+onmessage	deno.d.ts	/^  onmessage: (e: { data: any }) => void;$/;"	p	interface:Window
+onmessage	deno.d.ts	/^declare let onmessage: (e: { data: any }) => void;$/;"	v
+onunload	deno.d.ts	/^  onunload: Function | undefined;$/;"	p	interface:Window
+onunload	deno.d.ts	/^declare const onunload: Function | undefined;$/;"	C
+options	deno.d.ts	/^    readonly options: boolean | AddEventListenerOptions;$/;"	p	interface:domTypes.EventListener
+organizations_url	types.d.ts	/^  organizations_url: string;$/;"	p	interface:Follower
+organizations_url	types.d.ts	/^  organizations_url: string;$/;"	p	interface:User
+organizations_url	user.ts	/^  public organizations_url: string;$/;"	p	class:User
+origin	deno.d.ts	/^    readonly origin: string;$/;"	p	class:io.URL
+origin	deno.d.ts	/^    readonly origin: string;$/;"	p	interface:domTypes.Location
+passive	deno.d.ts	/^    passive: boolean;$/;"	p	interface:domTypes.AddEventListenerOptions
+password	deno.d.ts	/^    password: string;$/;"	p	class:io.URL
+path	deno.d.ts	/^    path: EventPath[];$/;"	p	interface:domTypes.Event
+pathname	deno.d.ts	/^    pathname: string;$/;"	p	class:io.URL
+pathname	deno.d.ts	/^    pathname: string;$/;"	p	interface:domTypes.Location
+paths	tsconfig.json	/^    "paths": {$/;"	o	object:compilerOptions
+performance	deno.d.ts	/^  performance: performanceUtil.Performance;$/;"	p	interface:Window
+performance	deno.d.ts	/^declare const performance: performanceUtil.Performance;$/;"	C
+permissions	deno.d.ts	/^  export function permissions(): Permissions;$/;"	f	namespace:Deno
+permissions	mod.ts	/^const { permissions } = Deno;$/;"	C
+pid	deno.d.ts	/^  export let pid: number;$/;"	v	namespace:Deno
+port	deno.d.ts	/^    port: number;$/;"	p	interface:Deno.ListenOptions
+port	deno.d.ts	/^    port: string;$/;"	p	class:io.URL
+port	deno.d.ts	/^    port: string;$/;"	p	interface:domTypes.Location
+postMessage	deno.d.ts	/^  postMessage: typeof workers.postMessage;$/;"	p	interface:Window
+postMessage	deno.d.ts	/^declare const postMessage: typeof workers.postMessage;$/;"	C
+preventDefault	deno.d.ts	/^    preventDefault(): void;$/;"	m	interface:domTypes.Event
+printFunc	deno.d.ts	/^    private printFunc;$/;"	p	class:consoleTypes.Console
+protocol	deno.d.ts	/^    protocol: string;$/;"	p	class:io.URL
+protocol	deno.d.ts	/^    protocol: string;$/;"	p	interface:domTypes.Location
+prototype	deno.d.ts	/^    prototype: DomFile;$/;"	p	interface:domTypes.DomFileConstructor
+prototype	deno.d.ts	/^    prototype: FormData;$/;"	p	interface:domTypes.FormDataConstructor
+prototype	deno.d.ts	/^    prototype: Headers;$/;"	p	interface:domTypes.HeadersConstructor
+prototype	deno.d.ts	/^    prototype: Request;$/;"	p	interface:domTypes.RequestConstructor
+public_gists	types.d.ts	/^  public_gists: number;$/;"	p	interface:User
+public_gists	user.ts	/^  public public_gists: number;$/;"	p	class:User
+public_repos	types.d.ts	/^  public_repos: number;$/;"	p	interface:User
+public_repos	user.ts	/^  public public_repos: number;$/;"	p	class:User
+queueMicrotask	deno.d.ts	/^  queueMicrotask: (task: () => void) => void;$/;"	p	interface:Window
+read	deno.d.ts	/^    read(): Promise<any>;$/;"	m	interface:domTypes.ReadableStreamReader
+read	deno.d.ts	/^    read(p: Uint8Array): Promise<number | EOF>;$/;"	m	interface:Deno.Reader
+read	deno.d.ts	/^    read(p: Uint8Array): Promise<number | EOF>;$/;"	m	interface:io.Reader
+read	deno.d.ts	/^    read: boolean;$/;"	p	interface:Deno.Permissions
+readDirSync	deno.d.ts	/^  export function readDirSync(path: string): FileInfo[];$/;"	m	class:Deno.Buffer
+readSync	deno.d.ts	/^    readSync(p: Uint8Array): number | EOF;$/;"	m	interface:Deno.SyncReader
+readSync	deno.d.ts	/^    readSync(p: Uint8Array): number | EOF;$/;"	m	interface:io.SyncReader
+received_events_url	types.d.ts	/^  received_events_url: string;$/;"	p	interface:Follower
+received_events_url	types.d.ts	/^  received_events_url: string;$/;"	p	interface:User
+received_events_url	user.ts	/^  public received_events_url: string;$/;"	p	class:User
+redirect	deno.d.ts	/^    readonly redirect?: RequestRedirect;$/;"	p	interface:domTypes.Request
+redirect	deno.d.ts	/^    redirect?: RequestRedirect;$/;"	p	interface:domTypes.RequestInit
+redirected	deno.d.ts	/^    readonly redirected: boolean;$/;"	p	interface:domTypes.Response
+referrer	deno.d.ts	/^    readonly referrer?: string;$/;"	p	interface:domTypes.Request
+referrer	deno.d.ts	/^    referrer?: string;$/;"	p	interface:domTypes.RequestInit
+referrerPolicy	deno.d.ts	/^    readonly referrerPolicy?: ReferrerPolicy;$/;"	p	interface:domTypes.Request
+referrerPolicy	deno.d.ts	/^    referrerPolicy?: ReferrerPolicy;$/;"	p	interface:domTypes.RequestInit
+relatedTarget	deno.d.ts	/^    relatedTarget: EventTarget | null;$/;"	p	interface:domTypes.Event
+relatedTarget	deno.d.ts	/^    relatedTarget: EventTarget | null;$/;"	p	interface:domTypes.EventPath
+releaseLock	deno.d.ts	/^    releaseLock(): void;$/;"	m	interface:domTypes.ReadableStreamReader
+reload	deno.d.ts	/^    reload(): void;$/;"	m	interface:domTypes.Location
+reload	deno.d.ts	/^    reload(forcedReload: boolean): void;$/;"	m	interface:domTypes.Location
+remoteAddr	deno.d.ts	/^    remoteAddr: string;$/;"	p	interface:Deno.Conn
+removeEventListener	deno.d.ts	/^    removeEventListener($/;"	m	interface:domTypes.AbortSignal
+removeEventListener	deno.d.ts	/^    removeEventListener($/;"	m	interface:domTypes.EventTarget
+removeEventListener	deno.d.ts	/^    removeEventListener<K extends keyof AbortSignalEventMap>($/;"	m	interface:domTypes.AbortSignal
+removeEventListener	deno.d.ts	/^  removeEventListener: ($/;"	p	interface:Window
+removeEventListener	deno.d.ts	/^declare const removeEventListener: ($/;"	C
+removeSync	deno.d.ts	/^  export function removeSync(path: string, options?: RemoveOption): void;$/;"	m	class:Deno.Buffer
+replace	deno.d.ts	/^    replace(url: string): void;$/;"	m	interface:domTypes.Location
+repos_url	types.d.ts	/^  repos_url: string;$/;"	p	interface:Follower
+repos_url	types.d.ts	/^  repos_url: string;$/;"	p	interface:User
+repos_url	user.ts	/^  public repos_url: string;$/;"	p	class:User
+res	base.ts	/^  const res = await fetch(`https:\/\/api.github.com\/${endpoint}`, init);$/;"	C	function:GetJson
+resources	deno.d.ts	/^  export function resources(): ResourceMap;$/;"	f	namespace:Deno
+rid	deno.d.ts	/^    rid: number;$/;"	p	interface:Deno.Conn
+rootOfClosedTree	deno.d.ts	/^    rootOfClosedTree: boolean;$/;"	p	interface:domTypes.EventPath
+run	deno.d.ts	/^    run: boolean;$/;"	p	interface:Deno.Permissions
+run	deno.d.ts	/^  export function run(opt: RunOptions): Process;$/;"	f	namespace:Deno
+search	deno.d.ts	/^    search: string;$/;"	p	class:io.URL
+search	deno.d.ts	/^    search: string;$/;"	p	interface:domTypes.Location
+searchParams	deno.d.ts	/^    readonly searchParams: urlSearchParams.URLSearchParams;$/;"	p	class:io.URL
+seek	deno.d.ts	/^    seek(offset: number, whence: SeekMode): Promise<void>;$/;"	m	interface:Deno.Seeker
+seek	deno.d.ts	/^    seek(offset: number, whence: SeekMode): Promise<void>;$/;"	m	interface:io.Seeker
+seekSync	deno.d.ts	/^    seekSync(offset: number, whence: SeekMode): void;$/;"	m	interface:Deno.SyncSeeker
+seekSync	deno.d.ts	/^    seekSync(offset: number, whence: SeekMode): void;$/;"	m	interface:io.SyncSeeker
+set	deno.d.ts	/^    set(name: string, value: string | Blob, fileName?: string): void;$/;"	m	interface:domTypes.FormData
+set	deno.d.ts	/^    set(name: string, value: string): void;$/;"	m	interface:domTypes.Headers
+set	deno.d.ts	/^    set(name: string, value: string): void;$/;"	m	interface:domTypes.URLSearchParams
+setInterval	deno.d.ts	/^  setInterval: typeof timers.setInterval;$/;"	p	interface:Window
+setInterval	deno.d.ts	/^declare const setInterval: typeof timers.setInterval;$/;"	C
+setTimeout	deno.d.ts	/^  export function setTimeout($/;"	f	namespace:io
+setTimeout	deno.d.ts	/^  setTimeout: typeof timers.setTimeout;$/;"	p	interface:Window
+setTimeout	deno.d.ts	/^declare const setTimeout: typeof timers.setTimeout;$/;"	C
+signal	deno.d.ts	/^    readonly signal?: AbortSignal;$/;"	p	interface:domTypes.Request
+signal	deno.d.ts	/^    signal?: AbortSignal | null;$/;"	p	interface:domTypes.RequestInit
+signal	deno.d.ts	/^    signal?: number;$/;"	p	interface:Deno.ProcessStatus
+site_admin	types.d.ts	/^  site_admin: boolean;$/;"	p	interface:Follower
+site_admin	types.d.ts	/^  site_admin: boolean;$/;"	p	interface:User
+site_admin	user.ts	/^  public site_admin: boolean;$/;"	p	class:User
+size	deno.d.ts	/^    readonly size: number;$/;"	p	interface:domTypes.Blob
+slice	deno.d.ts	/^    slice(start?: number, end?: number, contentType?: string): Blob;$/;"	m	interface:domTypes.Blob
+slotInClosedTree	deno.d.ts	/^    slotInClosedTree: boolean;$/;"	p	interface:domTypes.EventPath
+sort	deno.d.ts	/^    sort(): void;$/;"	m	interface:domTypes.URLSearchParams
+starred_url	types.d.ts	/^  starred_url: string;$/;"	p	interface:Follower
+starred_url	types.d.ts	/^  starred_url: string;$/;"	p	interface:User
+starred_url	user.ts	/^  public starred_url: string;$/;"	p	class:User
+status	deno.d.ts	/^    readonly status: number;$/;"	p	interface:domTypes.Response
+status	deno.d.ts	/^    status?: number;$/;"	p	interface:domTypes.ResponseInit
+statusText	deno.d.ts	/^    readonly statusText: string;$/;"	p	interface:domTypes.Response
+statusText	deno.d.ts	/^    statusText?: string;$/;"	p	interface:domTypes.ResponseInit
+stderr	deno.d.ts	/^  export const stderr: File;$/;"	C	namespace:Deno
+stdin	deno.d.ts	/^  export const stdin: File;$/;"	C	namespace:Deno
+stdout	deno.d.ts	/^  export const stdout: File;$/;"	C	namespace:Deno
+stopImmediatePropagation	deno.d.ts	/^    stopImmediatePropagation(): void;$/;"	m	interface:domTypes.Event
+stopPropagation	deno.d.ts	/^    stopPropagation(): void;$/;"	m	interface:domTypes.Event
+string	deno.d.ts	/^      [type in string]: domTypes.EventListener[]$/;"	a	namespace:eventTarget
+subscriptions_url	types.d.ts	/^  subscriptions_url: string;$/;"	p	interface:Follower
+subscriptions_url	types.d.ts	/^  subscriptions_url: string;$/;"	p	interface:User
+subscriptions_url	user.ts	/^  public subscriptions_url: string;$/;"	p	class:User
+subtle	deno.d.ts	/^  readonly subtle: null;$/;"	p	interface:Crypto
+success	deno.d.ts	/^    success: boolean;$/;"	p	interface:Deno.ProcessStatus
+symbol	deno.d.ts	/^  const isConsoleInstance: unique symbol;$/;"	C	namespace:consoleTypes
+symbol	deno.d.ts	/^  export const bytesSymbol: unique symbol;$/;"	C	namespace:blob
+symbol	deno.d.ts	/^  export const customInspect: unique symbol;$/;"	C
+symbol	deno.d.ts	/^  export const customInspect: unique symbol;$/;"	C	namespace:Deno
+symbol	deno.d.ts	/^  export const eventTargetAssignedSlot: unique symbol;$/;"	C	namespace:eventTarget
+symbol	deno.d.ts	/^  export const eventTargetHasActivationBehavior: unique symbol;$/;"	C	namespace:eventTarget
+symbol	deno.d.ts	/^  export const eventTargetHost: unique symbol;$/;"	C	namespace:domTypes
+symbol	deno.d.ts	/^  export const eventTargetListeners: unique symbol;$/;"	C	namespace:domTypes
+symbol	deno.d.ts	/^  export const eventTargetMode: unique symbol;$/;"	C	namespace:domTypes
+symbol	deno.d.ts	/^  export const eventTargetNodeType: unique symbol;$/;"	C	namespace:domTypes
+target	deno.d.ts	/^    target: EventTarget | null;$/;"	p	interface:domTypes.Event
+target	deno.d.ts	/^    target: EventTarget | null;$/;"	p	interface:domTypes.EventPath
+target	tsconfig.json	/^    "target": "es2018",$/;"	s	object:compilerOptions
+tee	deno.d.ts	/^    tee(): [ReadableStream, ReadableStream];$/;"	m	interface:domTypes.ReadableStream
+text	deno.d.ts	/^    text(): Promise<string>;$/;"	m	interface:domTypes.Body
+timeStamp	deno.d.ts	/^    readonly timeStamp: Date;$/;"	p	interface:domTypes.Event
+toString	deno.d.ts	/^    toString(): string;$/;"	m	interface:domTypes.URLSearchParams
+total	deno.d.ts	/^    readonly total: number;$/;"	p	interface:domTypes.ProgressEvent
+total	deno.d.ts	/^    total?: number;$/;"	p	interface:domTypes.ProgressEventInit
+touchTargetList	deno.d.ts	/^    touchTargetList: EventTarget[];$/;"	p	interface:domTypes.EventPath
+trailer	deno.d.ts	/^    readonly trailer: Promise<Headers>;$/;"	p	interface:domTypes.Response
+transport	deno.d.ts	/^    transport?: Transport;$/;"	p	interface:Deno.ListenOptions
+type	deno.d.ts	/^    readonly type: ResponseType;$/;"	p	interface:domTypes.Response
+type	deno.d.ts	/^    readonly type: string;$/;"	p	interface:domTypes.Blob
+type	deno.d.ts	/^    readonly type: string;$/;"	p	interface:domTypes.Event
+type	deno.d.ts	/^    type?: string;$/;"	p	interface:domTypes.BlobPropertyBag
+type	types.d.ts	/^  type: string;$/;"	p	interface:Follower
+type	types.d.ts	/^  type: string;$/;"	p	interface:User
+type	user.ts	/^  public type: string;$/;"	p	class:User
+typescript	deno.d.ts	/^    typescript: string;$/;"	p	interface:Deno.Version
+updated_at	types.d.ts	/^  updated_at: string;$/;"	p	interface:User
+updated_at	user.ts	/^  public updated_at: string;$/;"	p	class:User
+url	deno.d.ts	/^    readonly url: string;$/;"	p	interface:domTypes.Request
+url	deno.d.ts	/^    readonly url: string;$/;"	p	interface:domTypes.Response
+url	deno.d.ts	/^  url: string;$/;"	p	interface:ImportMeta
+url	types.d.ts	/^  url: string;$/;"	p	interface:Follower
+url	types.d.ts	/^  url: string;$/;"	p	interface:User
+url	user.ts	/^  public url: string;$/;"	p	class:User
+user	user_test.ts	/^    const user = await getUser('asottile', env().GITHUB_TOKEN);$/;"	C	function:userTest
+userTest	user_test.ts	/^  async function userTest() {$/;"	f
+username	deno.d.ts	/^    username: string;$/;"	p	class:io.URL
+v8	deno.d.ts	/^    v8: string;$/;"	p	interface:Deno.Version
+values	deno.d.ts	/^    values(): IterableIterator<V>;$/;"	m	interface:domTypes.DomIterable
+values	deno.d.ts	/^    values(): IterableIterator<string>;$/;"	m	interface:domTypes.Headers
+version	deno.d.ts	/^  export const version: Version;$/;"	C	namespace:Deno
+window	deno.d.ts	/^    window?: any;$/;"	p	interface:domTypes.RequestInit
+window	deno.d.ts	/^  window: Window & typeof globalThis;$/;"	p	interface:Window
+window	deno.d.ts	/^declare const window: Window & typeof globalThis;$/;"	C
+workerClose	deno.d.ts	/^  workerClose: typeof workers.workerClose;$/;"	p	interface:Window
+workerClose	deno.d.ts	/^declare const workerClose: typeof workers.workerClose;$/;"	C
+workerMain	deno.d.ts	/^  workerMain: typeof workers.workerMain;$/;"	p	interface:Window
+workerMain	deno.d.ts	/^declare const workerMain: typeof workers.workerMain;$/;"	C
+write	deno.d.ts	/^    write(p: Uint8Array): Promise<number>;$/;"	m	interface:Deno.Writer
+write	deno.d.ts	/^    write(p: Uint8Array): Promise<number>;$/;"	m	interface:io.Writer
+write	deno.d.ts	/^    write: boolean;$/;"	p	interface:Deno.Permissions
+writeFileSync	deno.d.ts	/^  export function writeFileSync($/;"	m	class:Deno.Buffer
+writeSync	deno.d.ts	/^    writeSync(p: Uint8Array): number;$/;"	m	interface:Deno.SyncWriter
+writeSync	deno.d.ts	/^    writeSync(p: Uint8Array): number;$/;"	m	interface:io.SyncWriter

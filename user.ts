@@ -13,7 +13,7 @@ class User implements IUser {
   public gists_url: string;
   public starred_url: string;
   public subscriptions_url: string;
-  public organisations_url: string;
+  public organizations_url: string;
   public repos_url: string;
   public events_url: string;
   public received_events_url: string;
@@ -45,7 +45,7 @@ class User implements IUser {
     this.gists_url = json.gists_url;
     this.starred_url = json.starred_url;
     this.subscriptions_url = json.subscriptions_url;
-    this.organisations_url = json.organisations_url;
+    this.organizations_url = json.organizations_url;
     this.repos_url = json.repos_url;
     this.events_url = json.events_url;
     this.received_events_url = json.received_events_url;
@@ -95,10 +95,10 @@ class User implements IUser {
   }
 
   /**
-   * Gets the user's joined organisations from organisations_url
+   * Gets the user's joined organizations from organizations_url
    */
-  public async getOrganisations(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/organisations`);
+  public async getOrganizations(): Promise<IUser[]> {
+    return await GetJson<IUser[]>(`users/${this.login}/organizations`);
   }
 
   /**
