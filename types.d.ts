@@ -11,7 +11,7 @@ export interface User {
   gists_url: string;
   starred_url: string;
   subscriptions_url: string;
-  organisations_url: string;
+  organizations_url: string;
   repos_url: string;
   events_url: string;
   received_events_url: string;
