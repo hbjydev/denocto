@@ -118,7 +118,7 @@ class User implements IUser {
   /**
    * Gets the user's received events from received_events_url
    */
-  public async gerReceivedEvents(): Promise<IUser[]> {
+  public async getReceivedEvents(): Promise<IUser[]> {
     return await GetJson<IUser[]>(`users/${this.login}/received_events`);
   }
 }
