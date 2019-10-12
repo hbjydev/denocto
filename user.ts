@@ -72,6 +72,24 @@ class User implements IUser {
   public async getGists(): Promise<IUser[]> {
     return await GetJson<IUser[]>(`users/${this.login}/gists`);
   }
+  public async getStarred(): Promise<IUser[]> {
+    return await GetJson<IUser[]>(`users/${this.login}/starred`);
+  }
+  public async getSubscriptions(): Promise<IUser[]> {
+    return await GetJson<IUser[]>(`users/${this.login}/subscriptions`);
+  }
+  public async getOrganisations(): Promise<IUser[]> {
+    return await GetJson<IUser[]>(`users/${this.login}/organisations`);
+  }
+  public async getRepos(): Promise<IUser[]> {
+    return await GetJson<IUser[]>(`users/${this.login}/repos`);
+  }
+  public async getEvents(): Promise<IUser[]> {
+    return await GetJson<IUser[]>(`users/${this.login}/events`);
+  }
+  public async gerReceivedEvents(): Promise<IUser[]> {
+    return await GetJson<IUser[]>(`users/${this.login}/received_events`);
+  }
 }
 
 /**
