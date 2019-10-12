@@ -1,2 +1,3 @@
 // Copyright 2019 Hayden Young. MIT License.
-export * as user from './user.ts'
+import * as user from './user.ts';
+export { user };
