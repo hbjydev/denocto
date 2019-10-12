@@ -6,7 +6,7 @@
 export default async function GetJson<T>(
   endpoint: string,
   token?: string
-): Promise<T | Error> {
+): Promise<T> {
   const init = {
     headers: {
       'User-Agent': 'denocto',
