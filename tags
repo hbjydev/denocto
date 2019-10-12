@@ -188,6 +188,7 @@ SyncSeeker	deno.d.ts	/^  export interface SyncSeeker {$/;"	i	namespace:io
 SyncWriter	deno.d.ts	/^  export interface SyncWriter {$/;"	i	namespace:Deno
 SyncWriter	deno.d.ts	/^  export interface SyncWriter {$/;"	i	namespace:io
 TEXT_NODE	deno.d.ts	/^    TEXT_NODE = 3,$/;"	e	enum:domTypes.NodeType
+Testing	README.md	/^## Testing$/;"	s
 TextDecoder	deno.d.ts	/^  TextDecoder: typeof textEncoding.TextDecoder;$/;"	p	interface:Window
 TextDecoder	deno.d.ts	/^  export class TextDecoder {$/;"	c	namespace:io
 TextDecoder	deno.d.ts	/^declare const TextDecoder: typeof textEncoding.TextDecoder;$/;"	C
@@ -205,8 +206,10 @@ URLSearchParams	deno.d.ts	/^  export interface URLSearchParams extends DomIterab
 URLSearchParams	deno.d.ts	/^declare const URLSearchParams: typeof urlSearchParams.URLSearchParams;$/;"	C
 URLSearchParams	deno.d.ts	/^declare type URLSearchParams = domTypes.URLSearchParams;$/;"	a
 URLSearchParamsInit	deno.d.ts	/^  export type URLSearchParamsInit =$/;"	a	namespace:domTypes
+Usage	README.md	/^## Usage$/;"	s
 User	types.d.ts	/^export interface User {$/;"	i
 User	user.ts	/^class User implements IUser {$/;"	c
+Users	README.md	/^### Users$/;"	S
 Version	deno.d.ts	/^  interface Version {$/;"	i	namespace:Deno
 Window	deno.d.ts	/^declare interface Window {$/;"	i
 Worker	deno.d.ts	/^  Worker: typeof workers.WorkerImpl;$/;"	p	interface:Window
@@ -381,6 +384,7 @@ getReader	deno.d.ts	/^    getReader(): ReadableStreamReader;$/;"	m	interface:dom
 getRepos	user.ts	/^  public async getRepos(): Promise<IUser[]> {$/;"	m	class:User
 getStarred	user.ts	/^  public async getStarred(): Promise<IUser[]> {$/;"	m	class:User
 getSubscriptions	user.ts	/^  public async getSubscriptions(): Promise<IUser[]> {$/;"	m	class:User
+getUser	README.md	/^#### getUser$/;"	t
 getUser	user.ts	/^export const getUser = async (username: string, token?: string): Promise<User | null> => {$/;"	C
 gists_url	types.d.ts	/^  gists_url: string;$/;"	p	interface:Follower
 gists_url	types.d.ts	/^  gists_url: string;$/;"	p	interface:User
