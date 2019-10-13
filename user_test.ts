@@ -22,4 +22,10 @@ test('user.getRepos should give a valid list of repositories', async function us
   assertEquals(repos[0].name, 'add-trailing-comma');
 });
 
+test('user.getGists should give a valid list of gists', async function userTest() {
+  const user = await getUser('asottile', env().GITHUB_TOKEN);
+  const gists = await user.getGists();
+  assertEquals(gists[0].id, '4715e8a68f924c4897952ebca05d30f3');
+});
+
 runTests();
