@@ -1,4 +1,4 @@
-import { User as IUser, Repository, ShortUser } from './types.d.ts';
+import { User as IUser, Repository, ShortUser, Event } from './types.d.ts';
 import GetJson from './base.ts';
 
 class User implements IUser {
@@ -111,15 +111,15 @@ class User implements IUser {
   /**
    * Gets the user's events from events_url
    */
-  public async getEvents(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/events`);
+  public async getEvents(): Promise<Event[]> {
+    return await GetJson<Event[]>(`users/${this.login}/events`);
   }
 
   /**
    * Gets the user's received events from received_events_url
    */
-  public async gerReceivedEvents(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/received_events`);
+  public async gerReceivedEvents(): Promise<Event[]> {
+    return await GetJson<Event[]>(`users/${this.login}/received_events`);
   }
 }
 
