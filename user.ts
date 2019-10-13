@@ -1,5 +1,12 @@
-import { User as IUser, Repository, ShortUser } from './types.d.ts';
-import GetJson from './base.ts';
+import {
+  User as IUser,
+  Repository,
+  ShortUser,
+  Event,
+  Gist,
+  Organization
+} from "./types.d.ts";
+import GetJson from "./base.ts";
 
 class User implements IUser {
   public login: string;
@@ -76,8 +83,8 @@ class User implements IUser {
   /**
    * Gets the user's gists from gists_url
    */
-  public async getGists(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/gists`);
+  public async getGists(): Promise<Gist[]> {
+    return await GetJson<Gist[]>(`users/${this.login}/gists`);
   }
 
   /**
@@ -90,15 +97,15 @@ class User implements IUser {
   /**
    * Gets the user's subscriptions to repos from subscriptions_url
    */
-  public async getSubscriptions(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/subscriptions`);
+  public async getSubscriptions(): Promise<Repository[]> {
+    return await GetJson<Repository[]>(`users/${this.login}/subscriptions`);
   }
 
   /**
    * Gets the user's joined organizations from organizations_url
    */
-  public async getOrganizations(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/organizations`);
+  public async getOrganizations(): Promise<Organization[]> {
+    return await GetJson<Organization[]>(`users/${this.login}/organizations`);
   }
 
   /**
@@ -111,15 +118,15 @@ class User implements IUser {
   /**
    * Gets the user's events from events_url
    */
-  public async getEvents(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/events`);
+  public async getEvents(): Promise<Event[]> {
+    return await GetJson<Event[]>(`users/${this.login}/events`);
   }
 
   /**
    * Gets the user's received events from received_events_url
    */
-  public async gerReceivedEvents(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/received_events`);
+  public async getReceivedEvents(): Promise<Event[]> {
+    return await GetJson<Event[]>(`users/${this.login}/received_events`);
   }
 }
 
@@ -131,7 +138,7 @@ class User implements IUser {
 export const getUser = async (
   username: string,
   token?: string
-): Promise<User | null> => {
+): Promise<User> => {
   const json = await GetJson<IUser>(`users/${username}`, token);
   return new User(json);
 };

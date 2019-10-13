@@ -1,3 +1,6 @@
+/**
+ * A GitHub User
+ */
 export interface User {
   login: string;
   id: number;
@@ -31,6 +34,9 @@ export interface User {
   updated_at: string;
 }
 
+/**
+ * A GitHub User, but found in arrays.
+ */
 export interface ShortUser {
   login: string;
   id: number;
@@ -52,6 +58,9 @@ export interface ShortUser {
   site_admin: boolean;
 }
 
+/**
+ * A GitHub Repository
+ */
 export interface Repository {
   id: number;
   node_id: string;
@@ -124,8 +133,8 @@ export interface Repository {
     admin: boolean;
     push: boolean;
     pull: boolean;
-  },
-  template_repository?: string,
+  };
+  template_repository?: string;
   subscribers_count: number;
   network_count: number;
   license: {
@@ -134,6 +143,115 @@ export interface Repository {
     spdx_id: string;
     url: string;
     node_id: string;
-  }
+  };
 }
 
+/**
+ * A GitHub Event
+ */
+export interface Event {
+  type: string;
+  public: boolean;
+  payload: any;
+  repo: {
+    id: number;
+    name: string;
+    url: string;
+  };
+  actor: {
+    id: number;
+    login: string;
+    gravatar_id: string;
+    avatar_url: string;
+    url: string;
+  };
+  org: {
+    id: number;
+    login: string;
+    gravatar_id: string;
+    avatar_url: string;
+    url: string;
+  };
+  created_at: string;
+  id: string;
+}
+
+/**
+ * A GitHub Organization
+ */
+export interface Organization {
+  login: string;
+  id: number;
+  node_id: string;
+  url: string;
+  repos_url: string;
+  events_url: string;
+  hooks_url: string;
+  issues_url: string;
+  members_url: string;
+  public_members_url: string;
+  avatar_url: string;
+  description: string;
+  name: string;
+  company: string;
+  blog: string;
+  location: string;
+  email: string;
+  is_verified: boolean;
+  has_organization_projects: boolean;
+  has_repository_projects: boolean;
+  public_repos: number;
+  public_gists: number;
+  followers: number;
+  following: number;
+  html_url: string;
+  created_at: string;
+  type: string;
+  total_private_repos: number;
+  owned_private_repos: number;
+  private_gists: number;
+  disk_usage: number;
+  collaborators: number;
+  billing_email: string;
+  plan: {
+    name: string;
+    space: number;
+    private_repos: number;
+  };
+  default_repository_settings: string;
+  members_can_create_repositories: boolean;
+  two_factor_requirement_enabled: boolean;
+  members_allowed_repository_creation_type: string;
+}
+
+/**
+ * A GitHub Gist
+ */
+export interface Gist {
+  url: string;
+  forks_url: string;
+  commits_url: string;
+  id: string;
+  node_id: string;
+  git_pull_url: string;
+  git_push_url: string;
+  html_url: string;
+  files: {
+    [key: string]: {
+      filename: string;
+      type: string;
+      language: string;
+      raw_url: string;
+      size: number;
+    };
+  };
+  public: boolean;
+  created_at: string;
+  updated_at: string;
+  description?: string;
+  comments: number;
+  user?: any;
+  comments_url: string;
+  owner: ShortUser;
+  truncated: boolean;
+}

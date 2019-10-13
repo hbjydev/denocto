@@ -9,11 +9,11 @@ export default async function GetJson<T>(
 ): Promise<T> {
   const init = {
     headers: {
-      'User-Agent': 'denocto',
+      "User-Agent": "denocto"
     },
-    method: 'GET',
+    method: "GET"
   };
-  token ? (init.headers['Authorization'] = `token ${token}`) : null;
+  token ? (init.headers["Authorization"] = `token ${token}`) : null;
   const res = await fetch(`https://api.github.com/${endpoint}`, init);
   const json = await res.json();
 
