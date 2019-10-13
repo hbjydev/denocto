@@ -1,4 +1,4 @@
-import { User as IUser } from './types.d.ts';
+import { User as IUser, Repository, ShortUser, Event } from './types.d.ts';
 import GetJson from './base.ts';
 
 class User implements IUser {
@@ -45,7 +45,7 @@ class User implements IUser {
     this.gists_url = json.gists_url;
     this.starred_url = json.starred_url;
     this.subscriptions_url = json.subscriptions_url;
-    this.organizations_url = json.organisations_url;
+    this.organizations_url = json.organizations_url;
     this.repos_url = json.repos_url;
     this.events_url = json.events_url;
     this.received_events_url = json.received_events_url;
@@ -69,8 +69,8 @@ class User implements IUser {
   /**
    * Gets the user's followers from followers_url
    */
-  public async getFollowers(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/followers`);
+  public async getFollowers(): Promise<ShortUser[]> {
+    return await GetJson<ShortUser[]>(`users/${this.login}/followers`);
   }
 
   /**
@@ -83,8 +83,8 @@ class User implements IUser {
   /**
    * Gets the user's starred repos from starred_url
    */
-  public async getStarred(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/starred`);
+  public async getStarred(): Promise<Repository[]> {
+    return await GetJson<Repository[]>(`users/${this.login}/starred`);
   }
 
   /**
@@ -98,28 +98,28 @@ class User implements IUser {
    * Gets the user's joined organizations from organizations_url
    */
   public async getOrganizations(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/organisations`);
+    return await GetJson<IUser[]>(`users/${this.login}/organizations`);
   }
 
   /**
    * Gets the user's repos from repos_url
    */
-  public async getRepos(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/repos`);
+  public async getRepos(): Promise<Repository[]> {
+    return await GetJson<Repository[]>(`users/${this.login}/repos`);
   }
 
   /**
    * Gets the user's events from events_url
    */
-  public async getEvents(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/events`);
+  public async getEvents(): Promise<Event[]> {
+    return await GetJson<Event[]>(`users/${this.login}/events`);
   }
 
   /**
    * Gets the user's received events from received_events_url
    */
   public async getReceivedEvents(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/received_events`);
+    return await GetJson<Event[]>(`users/${this.login}/received_events`);
   }
 }
 
@@ -128,7 +128,10 @@ class User implements IUser {
  * @param username The username of the user
  * @param token Your GitHub personal access token for authentication
  */
-export const getUser = async (username: string, token?: string): Promise<User | null> => {
+export const getUser = async (
+  username: string,
+  token?: string
+): Promise<User | null> => {
   const json = await GetJson<IUser>(`users/${username}`, token);
   return new User(json);
-}
+};

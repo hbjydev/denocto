@@ -11,4 +11,4 @@ jobs:
       - name: Run User Test
         uses: denolib/deno-action@0.19.0
         with:
-          args: run user_test.ts --allow-net
+          args: run user_test.ts --allow-net --allow-env
