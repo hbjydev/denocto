@@ -1,4 +1,4 @@
-import { User as IUser } from './types.d.ts';
+import { User as IUser, Repository, ShortUser } from './types.d.ts';
 import GetJson from './base.ts';
 
 class User implements IUser {
@@ -69,8 +69,8 @@ class User implements IUser {
   /**
    * Gets the user's followers from followers_url
    */
-  public async getFollowers(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/followers`);
+  public async getFollowers(): Promise<ShortUser[]> {
+    return await GetJson<ShortUser[]>(`users/${this.login}/followers`);
   }
 
   /**
@@ -83,8 +83,8 @@ class User implements IUser {
   /**
    * Gets the user's starred repos from starred_url
    */
-  public async getStarred(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/starred`);
+  public async getStarred(): Promise<Repository[]> {
+    return await GetJson<Repository[]>(`users/${this.login}/starred`);
   }
 
   /**
@@ -104,8 +104,8 @@ class User implements IUser {
   /**
    * Gets the user's repos from repos_url
    */
-  public async getRepos(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/repos`);
+  public async getRepos(): Promise<Repository[]> {
+    return await GetJson<Repository[]>(`users/${this.login}/repos`);
   }
 
   /**

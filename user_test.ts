@@ -16,4 +16,10 @@ test('user.getFollowers should give a valid list of users', async function userT
   assertEquals(followers[0].id, 2161601);
 });
 
+test('user.getRepos should give a valid list of repositories', async function userTest() {
+  const user = await getUser('asottile', env().GITHUB_TOKEN);
+  const repos = await user.getRepos();
+  assertEquals(repos[0].name, 'add-trailing-comma');
+});
+
 runTests();
