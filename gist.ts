@@ -1,5 +1,5 @@
-import { Gist as IGist, User } from './types.d.ts';
-import getJson from './base.ts';
+import { Gist as IGist, ShortUser } from "./types.d.ts";
+import getJson from "./base.ts";
 
 class Gist implements IGist {
   public url: string;
@@ -10,7 +10,15 @@ class Gist implements IGist {
   public git_push_url: string;
   public git_pull_url: string;
   public html_url: string;
-  public files: any[];
+  public files: {
+    [key: string]: {
+      filename: string;
+      type: string;
+      language: string;
+      raw_url: string;
+      size: number;
+    };
+  };
   public public: boolean;
   public created_at: string;
   public updated_at: string;
@@ -18,7 +26,7 @@ class Gist implements IGist {
   public comments: number;
   public user: any;
   public comments_url: string;
-  public owner: User;
+  public owner: ShortUser;
   public truncated: boolean;
 
   constructor(json: any) {
@@ -37,7 +45,7 @@ class Gist implements IGist {
     this.description = json.description;
     this.comments = json.comments;
     this.user = json.user;
-    this.comments_url: json.comments_url;
+    this.comments_url = json.comments_url;
     this.owner = json.owner;
     this.truncated = json.truncated;
   }
@@ -48,11 +56,7 @@ class Gist implements IGist {
  * @param id The ID of the gist
  * @param token The token to authenticate with.
  */
-export const getGist = async (
-  id: string,
-  token?: string
-): Promise<Gist> => {
+export const getGist = async (id: string, token?: string): Promise<Gist> => {
   const json = await getJson<Gist>(`gists/${id}`, token);
   return new Gist(json);
-}
-
+};

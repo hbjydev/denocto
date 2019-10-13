@@ -8,4 +8,6 @@ if (!permissions().net) {
 }
 
 import * as user from "./user.ts";
+import * as gist from "./gist.ts";
+
 export { user };
