@@ -133,8 +133,8 @@ export interface Repository {
     admin: boolean;
     push: boolean;
     pull: boolean;
-  },
-  template_repository?: string,
+  };
+  template_repository?: string;
   subscribers_count: number;
   network_count: number;
   license: {
@@ -143,7 +143,7 @@ export interface Repository {
     spdx_id: string;
     url: string;
     node_id: string;
-  }
+  };
 }
 
 /**

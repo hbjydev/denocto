@@ -1,5 +1,12 @@
-import { User as IUser, Repository, ShortUser, Event, Gist, Organization } from './types.d.ts';
-import GetJson from './base.ts';
+import {
+  User as IUser,
+  Repository,
+  ShortUser,
+  Event,
+  Gist,
+  Organization
+} from "./types.d.ts";
+import GetJson from "./base.ts";
 
 class User implements IUser {
   public login: string;
@@ -90,8 +97,8 @@ class User implements IUser {
   /**
    * Gets the user's subscriptions to repos from subscriptions_url
    */
-  public async getSubscriptions(): Promise<IUser[]> {
-    return await GetJson<IUser[]>(`users/${this.login}/subscriptions`);
+  public async getSubscriptions(): Promise<Repository[]> {
+    return await GetJson<Repository[]>(`users/${this.login}/subscriptions`);
   }
 
   /**

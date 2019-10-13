@@ -88,7 +88,7 @@ declare namespace Deno {
   export enum SeekMode {
     SEEK_START = 0,
     SEEK_CURRENT = 1,
-    SEEK_END = 2,
+    SEEK_END = 2
   }
   export interface Reader {
     /** Reads up to p.byteLength bytes into `p`. It resolves to the number
@@ -276,29 +276,29 @@ declare namespace Deno {
   /** An instance of `File` for stderr. */
   export const stderr: File;
   export type OpenMode =
-    | 'r'
+    | "r"
     /** Read-write. Start at beginning of file. */
-    | 'r+'
+    | "r+"
     /** Write-only. Opens and truncates existing file or creates new one for
      * writing only.
      */
-    | 'w'
+    | "w"
     /** Read-write. Opens and truncates existing file or creates new one for
      * writing and reading.
      */
-    | 'w+'
+    | "w+"
     /** Write-only. Opens existing file or creates new one. Each write appends
      * content to the end of file.
      */
-    | 'a'
+    | "a"
     /** Read-write. Behaves like "a" and allows to read from file. */
-    | 'a+'
+    | "a+"
     /** Write-only. Exclusive create - creates new file only if one doesn't exist
      * already.
      */
-    | 'x'
+    | "x"
     /** Read-write. Behaves like `x` and allows to read from file. */
-    | 'x+';
+    | "x+";
 
   // @url js/buffer.d.ts
 
@@ -879,7 +879,7 @@ declare namespace Deno {
     UnsupportedFetchScheme = 47,
     TooManyRedirects = 48,
     Diagnostic = 49,
-    JSError = 50,
+    JSError = 50
   }
 
   // @url js/permissions.d.ts
@@ -930,7 +930,7 @@ declare namespace Deno {
 
   // @url js/net.d.ts
 
-  type Transport = 'tcp';
+  type Transport = "tcp";
   interface Addr {
     transport: Transport;
     address: string;
@@ -1071,7 +1071,7 @@ declare namespace Deno {
    * "null" This stream will be ignored. This is the equivalent of attaching the
    * stream to /dev/null.
    */
-  type ProcessStdio = 'inherit' | 'piped' | 'null';
+  type ProcessStdio = "inherit" | "piped" | "null";
   export interface RunOptions {
     args: string[];
     cwd?: string;
@@ -1158,7 +1158,7 @@ declare namespace Deno {
     SIGWINCH = 28,
     SIGIO = 29,
     SIGPWR = 30,
-    SIGSYS = 31,
+    SIGSYS = 31
   }
   enum MacOSSignal {
     SIGHUP = 1,
@@ -1191,7 +1191,7 @@ declare namespace Deno {
     SIGWINCH = 28,
     SIGINFO = 29,
     SIGUSR1 = 30,
-    SIGUSR2 = 31,
+    SIGUSR2 = 31
   }
   /** Signals numbers. This is platform dependent.
    */
@@ -1218,8 +1218,8 @@ declare namespace Deno {
 
   // @url js/build.d.ts
 
-  export type OperatingSystem = 'mac' | 'win' | 'linux';
-  export type Arch = 'x64' | 'arm64';
+  export type OperatingSystem = "mac" | "win" | "linux";
+  export type Arch = "x64" | "arm64";
   /** Build related information */
   interface BuildInfo {
     /** The CPU architecture. */
@@ -1402,12 +1402,12 @@ declare namespace domTypes {
     | string;
   export type RequestInfo = Request | string;
   type ReferrerPolicy =
-    | ''
-    | 'no-referrer'
-    | 'no-referrer-when-downgrade'
-    | 'origin-only'
-    | 'origin-when-cross-origin'
-    | 'unsafe-url';
+    | ""
+    | "no-referrer"
+    | "no-referrer-when-downgrade"
+    | "origin-only"
+    | "origin-when-cross-origin"
+    | "unsafe-url";
   export type BlobPart = BufferSource | Blob | string;
   export type FormDataEntryValue = DomFile | string;
   export interface DomIterable<K, V> {
@@ -1420,7 +1420,7 @@ declare namespace domTypes {
       thisArg?: any
     ): void;
   }
-  type EndingType = 'transparent' | 'native';
+  type EndingType = "transparent" | "native";
   export interface BlobPropertyBag {
     type?: string;
     ending?: EndingType;
@@ -1431,7 +1431,7 @@ declare namespace domTypes {
   export enum NodeType {
     ELEMENT_NODE = 1,
     TEXT_NODE = 3,
-    DOCUMENT_FRAGMENT_NODE = 11,
+    DOCUMENT_FRAGMENT_NODE = 11
   }
   export const eventTargetHost: unique symbol;
   export const eventTargetListeners: unique symbol;
@@ -1522,7 +1522,7 @@ declare namespace domTypes {
     NONE = 0,
     CAPTURING_PHASE = 1,
     AT_TARGET = 2,
-    BUBBLING_PHASE = 3,
+    BUBBLING_PHASE = 3
   }
   export interface EventPath {
     item: EventTarget;
@@ -1726,41 +1726,41 @@ declare namespace domTypes {
     prototype: Headers;
   }
   type RequestCache =
-    | 'default'
-    | 'no-store'
-    | 'reload'
-    | 'no-cache'
-    | 'force-cache'
-    | 'only-if-cached';
-  type RequestCredentials = 'omit' | 'same-origin' | 'include';
+    | "default"
+    | "no-store"
+    | "reload"
+    | "no-cache"
+    | "force-cache"
+    | "only-if-cached";
+  type RequestCredentials = "omit" | "same-origin" | "include";
   type RequestDestination =
-    | ''
-    | 'audio'
-    | 'audioworklet'
-    | 'document'
-    | 'embed'
-    | 'font'
-    | 'image'
-    | 'manifest'
-    | 'object'
-    | 'paintworklet'
-    | 'report'
-    | 'script'
-    | 'sharedworker'
-    | 'style'
-    | 'track'
-    | 'video'
-    | 'worker'
-    | 'xslt';
-  type RequestMode = 'navigate' | 'same-origin' | 'no-cors' | 'cors';
-  type RequestRedirect = 'follow' | 'error' | 'manual';
+    | ""
+    | "audio"
+    | "audioworklet"
+    | "document"
+    | "embed"
+    | "font"
+    | "image"
+    | "manifest"
+    | "object"
+    | "paintworklet"
+    | "report"
+    | "script"
+    | "sharedworker"
+    | "style"
+    | "track"
+    | "video"
+    | "worker"
+    | "xslt";
+  type RequestMode = "navigate" | "same-origin" | "no-cors" | "cors";
+  type RequestRedirect = "follow" | "error" | "manual";
   type ResponseType =
-    | 'basic'
-    | 'cors'
-    | 'default'
-    | 'error'
-    | 'opaque'
-    | 'opaqueredirect';
+    | "basic"
+    | "cors"
+    | "default"
+    | "error"
+    | "opaque"
+    | "opaqueredirect";
   export interface RequestInit {
     body?: BodyInit | null;
     cache?: RequestCache;
@@ -2072,7 +2072,7 @@ declare namespace event {
     constructor({
       bubbles,
       cancelable,
-      composed,
+      composed
     }?: {
       bubbles?: boolean | undefined;
       cancelable?: boolean | undefined;
@@ -2145,7 +2145,7 @@ declare namespace customEvent {
       bubbles,
       cancelable,
       composed,
-      detail,
+      detail
     }: domTypes.CustomEventInit);
   }
   export class CustomEvent extends event.Event implements domTypes.CustomEvent {
@@ -2176,7 +2176,7 @@ declare namespace eventTarget {
     constructor({
       capture,
       passive,
-      once,
+      once
     }?: {
       capture?: boolean | undefined;
       passive?: boolean | undefined;
@@ -2234,7 +2234,7 @@ declare namespace io {
   export enum SeekMode {
     SEEK_START = 0,
     SEEK_CURRENT = 1,
-    SEEK_END = 2,
+    SEEK_END = 2
   }
   export interface Reader {
     /** Reads up to p.byteLength bytes into `p`. It resolves to the number
@@ -2344,7 +2344,7 @@ declare namespace fetchTypes {
     readonly url: string;
     readonly status: number;
     statusText: string;
-    readonly type = 'basic';
+    readonly type = "basic";
     readonly redirected: boolean;
     headers: domTypes.Headers;
     readonly trailer: Promise<domTypes.Headers>;
@@ -2405,7 +2405,7 @@ declare namespace textEncoding {
   }
   export class TextEncoder {
     /** Returns "utf-8". */
-    readonly encoding = 'utf-8';
+    readonly encoding = "utf-8";
     /** Returns the result of running UTF-8's encoder. */
     encode(input?: string): Uint8Array;
     encodeInto(input: string, dest: Uint8Array): TextEncoderEncodeIntoResult;
@@ -2679,7 +2679,7 @@ declare namespace WebAssembly {
    * whether the bytes form a valid wasm module (`true`) or not (`false`). */
   function validate(bufferSource: domTypes.BufferSource): boolean;
 
-  type ImportExportKind = 'function' | 'table' | 'memory' | 'global';
+  type ImportExportKind = "function" | "table" | "memory" | "global";
 
   interface ModuleExportDescriptor {
     name: string;
@@ -2735,7 +2735,7 @@ declare namespace WebAssembly {
     grow(delta: number): number;
   }
 
-  type TableKind = 'anyfunc';
+  type TableKind = "anyfunc";
 
   interface TableDescriptor {
     element: TableKind;
