@@ -35,3 +35,6 @@ getUser("haydennyyy")
 | username | string  | The username to get information for |
 | token    | string? | The token to get information with   |
 
+## Gists
+
+Documentation coming soon...
