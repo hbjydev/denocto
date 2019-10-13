@@ -12,3 +12,7 @@ jobs:
         uses: denolib/deno-action@0.19.0
         with:
           args: run user_test.ts --allow-net --allow-env
+      - name: Run Gist Test
+        uses: denolib/deno-action@0.19.0
+        with:
+          args: run gist_test.ts --allow-net --allow-env
