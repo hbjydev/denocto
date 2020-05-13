@@ -1,14 +1,14 @@
 import {
-  User as IUser,
   Repository,
   ShortUser,
   Event,
-  Gist,
   Organization
 } from "./types.d.ts";
+import Gist from './gist.ts';
+
 import GetJson from "./base.ts";
 
-class User implements IUser {
+export default class User {
   public login: string;
   public id: number;
   public node_id: string;
@@ -128,17 +128,14 @@ class User implements IUser {
   public async getReceivedEvents(): Promise<Event[]> {
     return await GetJson<Event[]>(`users/${this.login}/received_events`);
   }
+  
+  /**
+   * Gets a user from the GitHub API.
+   * @param username The username of the user
+   * @param token Your GitHub personal access token for authentication
+   */
+  static async getOne (username: string, token?: string): Promise<User> {
+    const json = await GetJson<User>(`users/${username}`, token);
+    return new User(json);
+  };
 }
-
-/**
- * Gets a user from the GitHub API.
- * @param username The username of the user
- * @param token Your GitHub personal access token for authentication
- */
-export const getUser = async (
-  username: string,
-  token?: string
-): Promise<User> => {
-  const json = await GetJson<IUser>(`users/${username}`, token);
-  return new User(json);
-};

@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "target": "esnext",
     "baseUrl": ".",
-    "lib": ["es2018", "dom", "dom.iterable"],
+    "lib": ["esnext", "dom"],
     "paths": {
       "deno": ["./deno.d.ts"],
-      "https://*": ["../../.deno/deps/https/*"],
+      "https://*": ["../../../.deno/deps/https/*"],
       "http://*": ["../../.deno/deps/http/*"]
     }
   }

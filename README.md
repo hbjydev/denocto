@@ -7,7 +7,7 @@ A GitHub API Wrapper for [Deno](https://deno.land).
 To run the unit tests for this API wrapper, it's as simple as running the following:
 
 ```
-$ deno run **/*_test.ts --allow-env --allow-net
+$ deno test --allow-env --allow-net
 ```
 
 And to use a token with it, set the `GITHUB_TOKEN` environment variable.
@@ -17,18 +17,15 @@ And to use a token with it, set the `GITHUB_TOKEN` environment variable.
 ### Users
 
 ```ts
-import { getUser } from "https://denopkg.com/haydennyyy/denocto/user.ts"
+import { User } from "https://denopkg.com/itshaydendev/denocto/user.ts"
 
-getUser("haydennyyy")
-  .then(res => {
-    console.log(res.login) // "haydennyyy"
-  })
-  .catch(err => {
-    console.error(err);
-  });
+const user = await User.getOne("itshaydendev")
+console.log(user.login); // itshaydendev
 ```
 
-#### getUser
+#### User#getOne
+
+> Gets a user from the GitHub API.
 
 | Argument | Type    | Description                         |
 |----------|---------|-------------------------------------|

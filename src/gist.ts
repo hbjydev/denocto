@@ -1,7 +1,7 @@
-import { Gist as IGist, ShortUser } from "./types.d.ts";
+import { ShortUser } from "./types.d.ts";
 import getJson from "./base.ts";
 
-class Gist implements IGist {
+export default class Gist {
   public url: string;
   public forks_url: string;
   public commits_url: string;
@@ -49,14 +49,14 @@ class Gist implements IGist {
     this.owner = json.owner;
     this.truncated = json.truncated;
   }
-}
 
-/**
- * Gets a user's gist
- * @param id The ID of the gist
- * @param token The token to authenticate with.
- */
-export const getGist = async (id: string, token?: string): Promise<Gist> => {
-  const json = await getJson<Gist>(`gists/${id}`, token);
-  return new Gist(json);
-};
+  /**
+   * Gets a user's gist
+   * @param id The ID of the gist
+   * @param token The token to authenticate with.
+   */
+  static async getOne(id: string, token?: string): Promise<Gist> {
+    const json = await getJson<Gist>(`gists/${id}`, token);
+    return new Gist(json);
+  };
+}

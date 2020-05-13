@@ -1,13 +1,6 @@
 // Copyright 2019 Hayden Young. MIT License.
-const { permissions } = Deno;
 
-if (!permissions().net) {
-  throw Error(
-    "You need to give this program `net` permissions to use Denocto."
-  );
-}
+import User from "./src/user.ts";
+import Gist from "./src/gist.ts";
 
-import * as user from "./user.ts";
-import * as gist from "./gist.ts";
-
-export { user };
+export { User, Gist };
