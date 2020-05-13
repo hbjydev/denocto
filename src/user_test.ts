@@ -1,7 +1,7 @@
 import { assertEquals, assert } from "https://deno.land/std/testing/asserts.ts";
 
 import User from "./user.ts";
-const { getUser } = User;
+const { getOne: getUser } = User;
 
 Deno.test("user.login should be populated", async () => {
   const user = await getUser("asottile", Deno.env.get('GITHUB_TOKEN'));
