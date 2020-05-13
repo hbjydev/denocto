@@ -17,7 +17,7 @@ And to use a token with it, set the `GITHUB_TOKEN` environment variable.
 ### Users
 
 ```ts
-import { User } from "https://denopkg.com/itshaydendev/denocto/user.ts"
+import { User } from "https://denopkg.com/itshaydendev/denocto/mod.ts"
 
 const user = await User.getOne("itshaydendev")
 console.log(user.login); // itshaydendev
@@ -34,4 +34,17 @@ console.log(user.login); // itshaydendev
 
 ## Gists
 
-Documentation coming soon...
+```ts
+import { Gist } from "https://denopkg.com/itshaydendev/denocto/mod.ts"
+
+const gist = await Gist.getOne("7ea2a9285771f63437eb9c843c173f03")
+```
+
+#### Gist#getOne
+
+> Gets a gist from the GitHub API.
+
+| Argument | Type    | Description                         |
+|----------|---------|-------------------------------------|
+| id       | string  | The ID to get information for       |
+| token    | string? | The token to get information with   |
